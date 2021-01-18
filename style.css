@@ -48,15 +48,16 @@ section {
 footer {
     text-align: center;
     padding: 50px;
+    background-color: #eee;
 }
 
 #intro {
     /*background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://www.pngkit.com/png/detail/877-8770741_free-north-carolina-outline-with-home-on-border.png');
     */
-    background-color: aquamarine
+    background-color: aquamarine;
 }
 
 #assignments {
     /* background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://jmhobbs29.github.io/WebProgramming6930/Images/cherry_blossoms.jpg'); */
-    background-color: darkgrey
+    background-color: darkgrey;
 }
