@@ -29,7 +29,7 @@ header li {
 }
 
 section {
-    height: 125vh;
+    height: 100vh;
     /* border: 1px solid black; */
     display: flex;
     justify-content: center;
