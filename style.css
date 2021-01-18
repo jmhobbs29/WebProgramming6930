@@ -34,6 +34,11 @@ section {
     justify-content: center;
     align-items: center;
     text-align: center;
+    
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 #hero .profile-img {
@@ -43,4 +48,12 @@ section {
 footer {
     text-align: center;
     padding: 50px;
+}
+
+#intro {
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://jmhobbs29.github.io/WebProgramming6930/Images/jamie.jpg');
+}
+
+#assignments {
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://jmhobbs29.github.io/WebProgramming6930/Images/jamie.jpg');
 }
