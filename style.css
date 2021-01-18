@@ -59,6 +59,7 @@ section {
 
 #intro .profile-img {
     width: 300px;
+    border-radius: 50%;
 }
 
 footer {
