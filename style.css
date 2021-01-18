@@ -44,7 +44,7 @@ section {
 
 .button {
     border: white;
-    color: white;
+    color: grey;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -56,6 +56,14 @@ section {
   
 .button1 {background-color: aquamarine;}
 .button2 {background-color: aquamarine;}
+.button3 {background-color: aquamarine;}
+.button4 {background-color: aquamarine;}
+.button5 {background-color: aquamarine;}
+.button6 {background-color: aquamarine;}
+.button7 {background-color: aquamarine;}
+.button8 {background-color: aquamarine;}
+.button9 {background-color: aquamarine;}
+.button10 {background-color: aquamarine;}
 
 #intro .profile-img {
     width: 300px;
