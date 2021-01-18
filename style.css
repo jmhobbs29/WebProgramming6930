@@ -51,11 +51,21 @@ section {
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
+    transition-duration: 0.4s;
     cursor: pointer;
   }
   
-.button1 {background-color: aquamarine;}
-.button2 {background-color: aquamarine;}
+.button1 {
+    background-color: aquamarine;
+    color: grey;
+}
+.button1:hover {
+    background-color: white;
+    color: aquamaring;
+    border: 2px solid aquamarine;
+}
+
+.button2 {background-color: aquamarine; color: grey;}
 .button3 {background-color: aquamarine;}
 .button4 {background-color: aquamarine;}
 .button5 {background-color: aquamarine;}
