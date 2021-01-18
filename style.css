@@ -29,19 +29,19 @@ header li {
 
 section {
     height: 100vh;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     
-    background-size: cover;
+/*     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed; */
 }
 
-#hero .profile-img {
+#intro .profile-img {
     width: 300px;
 }
 
