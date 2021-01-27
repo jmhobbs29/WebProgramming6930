@@ -1,9 +1,11 @@
+#main body style
 body {
     margin: 0;
     margin-top: 50px;
     font-family: sans-serif;
 }
 
+#top section 
 header {
     display: flex;
     position: fixed;
@@ -24,6 +26,7 @@ header ul {
     padding: 0;
 }
 
+#header font
 header li {
     margin-left: 20px;
 }
