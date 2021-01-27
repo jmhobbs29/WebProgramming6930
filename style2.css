@@ -63,10 +63,7 @@ section {
   
 .button1 {background-color: lightpink;}
 /*removed hover functionality so to know that you are on that page. */
-/* .button1:hover {
-    background-color: white;
-    border: 2px solid lightpink;
-} */
+
 .button2 {background-color: lightpink;}
 .button2:hover {
     background-color: white;
@@ -119,15 +116,11 @@ section {
 }
 
 #intro2 img {
-    width: 20%;
+    width: 40%;
     border-radius: 50%;
 }
 
-footer {
-    text-align: center;
-    padding: 50px;
-    background-color: #eee;
-}
+
 
 #intro {
     /*background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://www.pngkit.com/png/detail/877-8770741_free-north-carolina-outline-with-home-on-border.png');
@@ -139,7 +132,7 @@ footer {
     /*background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://www.pngkit.com/png/detail/877-8770741_free-north-carolina-outline-with-home-on-border.png');
     */
     background-color: lightpink;
-    border:1px lightpink;
+    border:1px white;
     float: left;
     width: 500px;
 }
@@ -148,4 +141,10 @@ footer {
     /* background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://jmhobbs29.github.io/WebProgramming6930/Images/cherry_blossoms.jpg'); */
     background-color: darkgrey;
     float: right;
+}
+
+footer {
+    text-align: center;
+    padding: 50px;
+    background-color: #eee;
 }
