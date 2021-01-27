@@ -1,3 +1,4 @@
+/*Second style sheet to combat similar first homework style. Modify later if possible. */
 #main body style
 body {
     margin: 0;
@@ -5,7 +6,7 @@ body {
     font-family: sans-serif;
 }
 
-#top section 
+
 header {
     display: flex;
     position: fixed;
@@ -17,29 +18,19 @@ header {
     background-color: #eee;
 }
 
-/* header * {
-    display: inline;
-    height: 50px;
-} */
-
+/*section attributes such as height of each section and centering of text*/
 section {
     height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    
-/*     background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed; */
 }
 
-
+/*buttons created to link to each homework except currently viewed assignment.*/
 .button {
     border: white;
     color: grey;
-    /* padding: 15px 32px; */
     height: 50px;
     width: 100px;
     text-align: center;
@@ -50,7 +41,9 @@ section {
     transition-duration: 0.4s;
     cursor: pointer;
   }
-  
+
+
+/*each button has hoover functione except current page.*/  
 .button1 {background-color: lightpink;}
 /*removed hover functionality so to know that you are on that page. */
 
@@ -100,24 +93,14 @@ section {
     border: 2px solid lightpink;
 }
 
-#intro img {
-    width: 20%;
-    border-radius: 50%;
-}
 
+/*image qualities for profile pic*/
 #intro2 img {
     width: 40%;
     border-radius: 50%;
 }
 
-
-
-#intro {
-    /*background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://www.pngkit.com/png/detail/877-8770741_free-north-carolina-outline-with-home-on-border.png');
-    */
-    background-color: lightpink;
-}
-
+/*intro section modifications*/
 #intro2 {
     /*background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://www.pngkit.com/png/detail/877-8770741_free-north-carolina-outline-with-home-on-border.png');
     */
@@ -127,6 +110,7 @@ section {
     width: 500px;
 }
 
+/*assignments section modifications*/
 #assignments {
     /* background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://jmhobbs29.github.io/WebProgramming6930/Images/cherry_blossoms.jpg'); */
     background-color: darkgrey;
@@ -134,8 +118,3 @@ section {
     width: 900px;
 }
 
-footer {
-    text-align: center;
-    padding: 50px;
-    background-color: #eee;
-}
