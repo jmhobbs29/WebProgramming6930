@@ -1,0 +1,124 @@
+/*Second style sheet to combat similar first homework style. Modify later if possible. */
+#main body style
+body {
+    margin: 0;
+    margin-top: 60px;
+    font-family: sans-serif;
+}
+
+
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    line-height: 100px;
+    background-color: #eee;
+}
+
+/*section attributes such as height of each section and centering of text*/
+section {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/*buttons created to link to each homework except currently viewed assignment.*/
+.button {
+    border: white;
+    color: grey;
+    height: 50px;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+.button0 {background-color: lightpink;}
+.button0:hover {
+    background-color: white;
+    border: 2px solid lightpink;
+}
+
+.button1 {background-color: lightpink;}
+.button1:hover {
+    background-color: white;
+    border: 2px solid lightpink;
+}
+/*each button has hoover functione except current page.*/  
+.button2 {background-color: lightpink;}
+
+.button3 {background-color: lightpink;}
+.button3:hover {
+    background-color: white;
+    border: 2px solid lightpink;
+}
+.button4 {background-color: lightpink;}
+.button4:hover {
+    background-color: white;
+    border: 2px solid lightpink;
+}
+.button5 {background-color: lightpink;}
+.button5:hover {
+    background-color: white;
+    border: 2px solid lightpink;
+}
+.button6 {background-color: lightpink;}
+.button6:hover {
+    background-color: white;
+    border: 2px solid lightpink;
+}
+.button7 {background-color: lightpink;}
+.button7:hover {
+    background-color: white;
+    border: 2px solid lightpink;
+}
+.button8 {background-color: lightpink;}
+.button8:hover {
+    background-color: white;
+    border: 2px solid lightpink;
+}
+.button9 {background-color: lightpink;}
+.button9:hover {
+    background-color: white;
+    border: 2px solid lightpink;
+}
+.button10 {background-color: lightpink;}
+.button10:hover {
+    background-color: white;
+    border: 2px solid lightpink;
+}
+
+
+/*image qualities for profile pic*/
+#intro2 img {
+    width: 40%;
+    border-radius: 50%;
+}
+
+/*intro section modifications*/
+#intro2 {
+    /*background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://www.pngkit.com/png/detail/877-8770741_free-north-carolina-outline-with-home-on-border.png');
+    */
+    background-color: lightpink;
+    border:1px white;
+    float: left;
+    width: 500px;
+}
+
+/*assignments section modifications*/
+#assignments {
+    /* background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://jmhobbs29.github.io/WebProgramming6930/Images/cherry_blossoms.jpg'); */
+    background-color: darkgrey;
+    float: right;
+    width: 900px;
+}
+
