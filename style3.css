@@ -2,7 +2,7 @@
 #main body style
 body {
     margin: 0;
-    /* margin-top: 60px; */
+    margin-top: 60px;
     font-family: sans-serif;
 }
 
@@ -13,37 +13,18 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    height: 20%;
+    height: 100px;
     line-height: 100px;
     background-color: #eee;
 }
 
 /*section attributes such as height of each section and centering of text*/
 section {
-    height: 100px;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-}
-
-.container {
-    height: 10%;
-    width:100%;
-    background-color: white;
-    
-}
-
-.left{
-    width: 33%;
-}
-
-.middle{
-    width: 33%;
-}
-
-.right{
-    width: 33%;
 }
 
 /*buttons created to link to each homework except currently viewed assignment.*/
@@ -61,20 +42,16 @@ section {
     cursor: pointer;
   }
 
-.button0 {background-color: lightpink;}
-.button0:hover {
-    background-color: white;
-    border: 2px solid lightpink;
-}
 
-.button1 {background-color: lightpink;}
-.button1:hover {
-    background-color: white;
-    border: 2px solid lightpink;
-}
 /*each button has hoover functione except current page.*/  
-.button2 {background-color: lightpink;}
+.button1 {background-color: lightpink;}
+/*removed hover functionality so to know that you are on that page. */
 
+.button2 {background-color: lightpink;}
+.button2:hover {
+    background-color: white;
+    border: 2px solid lightpink;
+}
 .button3 {background-color: lightpink;}
 .button3:hover {
     background-color: white;
@@ -130,7 +107,7 @@ section {
     background-color: lightpink;
     border:1px white;
     float: left;
-    width: 40%;
+    width: 500px;
 }
 
 /*assignments section modifications*/
@@ -138,24 +115,6 @@ section {
     /* background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://jmhobbs29.github.io/WebProgramming6930/Images/cherry_blossoms.jpg'); */
     background-color: darkgrey;
     float: right;
-    width: 60%;}
-
-#leftfoot {
-    background-color: #f6d8ac;
-    border:1px lightpink;
-    float: left;
-    width: 33%;
+    width: 900px;
 }
 
-#midfoot {
-    background-color: #f6d8ac;
-    border:1px lightpink;
-    width: 33%;
-}
-
-#rightfoot {
-    background-color: #f6d8ac;
-    border:1px lightpink;
-    float: right;
-    width: 33%;
-}
