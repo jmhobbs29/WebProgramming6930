@@ -124,27 +124,3 @@ section {
     width: 60%;
 }
 
-#footer {
-    min-width:99%;
-    clear: both;
-}
-
-.block li {
-    border: 2px solid blue;
-}
-
-/* .box-lt {
-    float:left;
-    width:33%;
-    border: 1px solid white;    
-    margin-right: auto;
-
-    background:#CCC;
-} 
-.box-rt {
-    float:right;
-    width:33%;
-    border: 1px solid white;
-
-    background:#CCC;
-}  */
