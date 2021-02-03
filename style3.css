@@ -20,7 +20,7 @@ header {
 
 /*section attributes such as height of each section and centering of text*/
 section {
-    height: 100vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -114,7 +114,7 @@ section {
 /*assignments section modifications*/
 #assignments {
     /* background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://jmhobbs29.github.io/WebProgramming6930/Images/cherry_blossoms.jpg'); */
-    background-color: lightpink;
+    background-color: grey;
     float: right;
     width: 60%;
     height: 100%;
