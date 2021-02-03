@@ -20,6 +20,7 @@ header {
 
 /*section attributes such as height of each section and centering of text*/
 section {
+    height: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
