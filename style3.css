@@ -129,19 +129,22 @@ section {
     clear: both;
 }
 
-.box-lt {
+.block li {
+    border: 2px solid blue;
+}
+
+/* .box-lt {
     float:left;
     width:33%;
     border: 1px solid white;    
     margin-right: auto;
-    /* padding:4px; */
-    /* margin-right:15px; */
+
     background:#CCC;
-}
+} 
 .box-rt {
     float:right;
     width:33%;
     border: 1px solid white;
-    /* padding:4px; */
+
     background:#CCC;
-}
+}  */
