@@ -35,7 +35,7 @@ section {
     width: 100px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+    display: block;
     font-size: 14px;
     margin: 4px 2px;
     transition-duration: 0.4s;
@@ -96,7 +96,7 @@ section {
 
 /*image qualities for profile pic*/
 #intro2 img {
-    width: 30%;
+    width: 20%;
     border-radius: 50%;
 }
 
