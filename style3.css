@@ -107,7 +107,7 @@ section {
     background-color: lightpink;
     border:1px white;
     float: left;
-    width: 40%;
+    width: 60%;
 
 }
 
@@ -116,7 +116,7 @@ section {
     /* background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://jmhobbs29.github.io/WebProgramming6930/Images/cherry_blossoms.jpg'); */
     background-color: darkgray;
     float: left;
-    width: 30%;
+    width: 20%;
 
 }
 
@@ -124,6 +124,6 @@ section {
     /* background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://jmhobbs29.github.io/WebProgramming6930/Images/cherry_blossoms.jpg'); */
     background-color: darkgray;
     float: right;
-    width: 30%;
+    width: 20%;
 
 }
