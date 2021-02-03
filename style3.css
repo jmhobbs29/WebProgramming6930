@@ -1,4 +1,4 @@
-/*Second style sheet to combat similar first homework style. Modify later if possible. */
+/*Third style sheet for HMWK2 assignment. */
 #main body style
 body {
     margin: 0;
@@ -18,7 +18,7 @@ header {
     background-color: #eee;
 }
 
-/*section attributes such as height of each section and centering of text*/
+/*section attributes*/
 section {
     height: 80vh;
     display: flex;
@@ -100,30 +100,25 @@ section {
     border-radius: 50%;
 }
 
-/*intro section modifications*/
+/*intro section column*/
 #intro2 {
-    /*background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://www.pngkit.com/png/detail/877-8770741_free-north-carolina-outline-with-home-on-border.png');
-    */
     background-color: lightpink;
     border:1px white;
     float: left;
     width: 60%;
-
 }
 
-/*assignments section modifications*/
+/*assignments section column 1*/
 #assignments {
-    /* background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://jmhobbs29.github.io/WebProgramming6930/Images/cherry_blossoms.jpg'); */
     background-color: darkgray;
     float: left;
     width: 20%;
-
 }
 
+/*assignments section column 2*/
 #assignments2 {
     /* background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://jmhobbs29.github.io/WebProgramming6930/Images/cherry_blossoms.jpg'); */
     background-color: darkgray;
     float: right;
     width: 20%;
-
 }
