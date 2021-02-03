@@ -132,14 +132,14 @@ section {
     margin:0 auto;
     overflow:hidden;/*contain floats*/
 }
-#footer .box-lt {
+.box-lt {
     float:left;
     width:33%;
  
     /* margin-right:15px; */
     background:#CCC;
 }
-#footer .box-rt {
+.box-rt {
     float:right;
     width:33%;
 
