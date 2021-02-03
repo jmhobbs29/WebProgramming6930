@@ -27,6 +27,24 @@ section {
     text-align: center;
 }
 
+.container {
+    height: 20%;
+    background-color: white;
+    
+}
+
+.left{
+    width: 33%;
+}
+
+.middle{
+    width: 33%;
+}
+
+.right{
+    width: 33%;
+}
+
 /*buttons created to link to each homework except currently viewed assignment.*/
 .button {
     border: white;
