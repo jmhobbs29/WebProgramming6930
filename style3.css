@@ -13,14 +13,14 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    height: 100px;
+    height: 20%;
     line-height: 100px;
     background-color: #eee;
 }
 
 /*section attributes such as height of each section and centering of text*/
 section {
-    height: 80vh;
+    height: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,7 +28,7 @@ section {
 }
 
 .container {
-    height: 20%;
+    height: 10%;
     width:100%;
     background-color: white;
     
