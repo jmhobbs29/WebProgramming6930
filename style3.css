@@ -20,7 +20,7 @@ header {
 
 /*section attributes such as height of each section and centering of text*/
 section {
-    height: 100vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,14 +42,16 @@ section {
     cursor: pointer;
   }
 
+
+/*each button has hoover functione except current page.*/  
+.button2 {background-color: lightpink;}
+/*removed hover functionality so to know that you are on that page. */
+
 .button0 {background-color: lightpink;}
 .button0:hover {
     background-color: white;
     border: 2px solid lightpink;
 }
-/*each button has hoover functione except current page.*/  
-.button2 {background-color: lightpink;}
-/*removed hover functionality so to know that you are on that page. */
 
 .button1 {background-color: lightpink;}
 .button1:hover {
@@ -91,12 +93,6 @@ section {
     background-color: white;
     border: 2px solid lightpink;
 }
-.button10 {background-color: lightpink;}
-.button10:hover {
-    background-color: white;
-    border: 2px solid lightpink;
-}
-
 
 /*image qualities for profile pic*/
 #intro2 img {
@@ -111,7 +107,6 @@ section {
     background-color: lightpink;
     border:1px white;
     float: left;
-    height: 80%;
     width: 40%;
 }
 
@@ -120,7 +115,6 @@ section {
     /* background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://jmhobbs29.github.io/WebProgramming6930/Images/cherry_blossoms.jpg'); */
     background-color: darkgrey;
     float: right;
-    height: 80%;
     width: 60%;
 }
 
