@@ -122,3 +122,26 @@ section {
     width: 60%;
 }
 
+#footer {
+    min-width:100%;
+    border-top:1px solid #FFF;
+    background:#999;
+}
+#inner {
+    width:960px;
+    margin:0 auto;
+    overflow:hidden;/*contain floats*/
+}
+#footer .box-lt {
+    float:left;
+    width:33%;
+ 
+    /* margin-right:15px; */
+    background:#CCC;
+}
+#footer .box-rt {
+    float:right;
+    width:33%;
+
+    background:#CCC;
+}
