@@ -123,9 +123,11 @@ section {
     height: 80%;
     width: 60%;
 }
-#footer{
+
+#footer {
     min-width:99%;
 }
+
 .box-lt {
     float:left;
     width:33%;
