@@ -111,6 +111,7 @@ section {
     background-color: lightpink;
     border:1px white;
     float: left;
+    height: 100%;
     width: 40%;
 }
 
@@ -119,6 +120,7 @@ section {
     /* background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://jmhobbs29.github.io/WebProgramming6930/Images/cherry_blossoms.jpg'); */
     background-color: darkgrey;
     float: right;
+    height: 100%;
     width: 60%;
 }
 
