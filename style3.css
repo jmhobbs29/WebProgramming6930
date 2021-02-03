@@ -126,6 +126,7 @@ section {
 
 #footer {
     min-width:99%;
+    clear: both;
 }
 
 .box-lt {
