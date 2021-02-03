@@ -105,14 +105,15 @@ section {
     background-color: lightpink;
     border:1px white;
     float: left;
-    width: 60%;
+    width: 40%;
 }
 
 /*assignments section column 1*/
 #assignments {
     background-color: darkgray;
     float: left;
-    width: 20%;
+    width: 30%;
+    padding: 4px;
 }
 
 /*assignments section column 2*/
@@ -120,5 +121,6 @@ section {
     /* background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://jmhobbs29.github.io/WebProgramming6930/Images/cherry_blossoms.jpg'); */
     background-color: darkgray;
     float: right;
-    width: 20%;
+    width: 30%;
+    padding: 4px;
 }
