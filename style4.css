@@ -26,11 +26,9 @@ body{
     display: none;
   }
 
-.logo {
-    width:300%
-}
 
-.container_1 {
+
+.container_1 .logo{
     float: left;
     width: 25%;
   }
