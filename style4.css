@@ -131,6 +131,6 @@ body{
     }
     
     .container_2 h2 {
-        display: flex;
+        display: none;
     }
 }
