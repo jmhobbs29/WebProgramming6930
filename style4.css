@@ -47,6 +47,7 @@ body{
 }
 .container_2 .carousel .box2{
     float: left;
+    margin-left:5px;
     background-color: rgb(209, 87, 87);
     width:30%;
     padding:5px;
