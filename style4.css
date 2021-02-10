@@ -77,7 +77,8 @@ body{
     .topnav.responsive {position: relative;}
     .topnav.responsive .icon {
         position: absolute;
-        leftt: 0;
+        left: 0;
+        align-items: center;
         top: 0;
     }
     .topnav.responsive a {
@@ -87,7 +88,7 @@ body{
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
     .logo {
        width: 30%;
        align-items: center;
