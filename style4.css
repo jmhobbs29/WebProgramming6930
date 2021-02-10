@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 .logo {
-  float: left;
+  /* float: left; */
   width: 20%;
 }
 
