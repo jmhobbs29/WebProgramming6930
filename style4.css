@@ -93,7 +93,7 @@ body{
 
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 414px) {
     .logo {
         float:none;
         width: 30%;
