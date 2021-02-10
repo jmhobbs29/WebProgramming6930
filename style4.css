@@ -1,10 +1,6 @@
 * {
   box-sizing: border-box;
 }
-.logo {
-  float: left;
-  width: 100%;
-}
 
 .topnav {
     overflow: hidden;
@@ -21,6 +17,36 @@
     text-decoration: none;
     font-size: 17px;
 }
+
+.logo {
+    float: left;
+    width: 25%;
+  }
+
+.carousel {
+    float:rigth;
+    width: 75%;
+}
+.box1{
+    float: left;
+    background-color: blue;
+    width:30%;
+    padding:5px;
+}
+.box2{
+    float: left;
+    background-color: blue;
+    width:30%;
+    padding:5px;
+}
+.box3{
+    float: right;
+    background-color: blue;
+    width:30%;
+    padding:5px;
+}
+
+
 
 @media screen and (max-width: 900px) {
     .logo {
