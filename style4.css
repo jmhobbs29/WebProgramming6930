@@ -27,19 +27,19 @@
     float:rigth;
     width: 75%;
 }
-.box1{
+.carousel .box1{
     float: left;
     background-color: blue;
     width:30%;
     padding:5px;
 }
-.box2{
+.carousel .box2{
     float: left;
     background-color: blue;
     width:30%;
     padding:5px;
 }
-.box3{
+.carousel .box3{
     float: right;
     background-color: blue;
     width:30%;
