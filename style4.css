@@ -58,15 +58,27 @@
        align-items: center;
     }
     .topnav a{
-        float: left;
-        display: block;
+        display: none;
 
     }
     .topnav a.icon {
-        float: right;
+        float: left;
         display: block;
-      }
+    }
+    
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+        position: absolute;
+        leftt: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
  }
+
  @media screen and (max-width: 600px) {
     .logo {
        width: 30%;
@@ -80,17 +92,17 @@
         float: right;
         display: block;
       }
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
  }
 
 
