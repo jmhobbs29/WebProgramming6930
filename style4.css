@@ -1,6 +1,6 @@
-* {
+/* * {
   box-sizing: border-box;
-}
+} */
 
 body{
     margin:0
@@ -73,6 +73,9 @@ body{
         float: left;
         display: block;
     }
+    .container_2 h1 {
+        display: none;
+    }
 
     .topnav.responsive {position: relative;}
     .topnav.responsive .icon {
@@ -85,6 +88,9 @@ body{
         float: none;
         display: block;
         text-align: left;
+    }
+    .container_2 h1 {
+        display: none;
     }
 }
 
