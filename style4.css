@@ -22,6 +22,10 @@
     display: none;
   }
 
+.logo {
+    width:300%
+}
+
 .container_1 .logo {
     float: left;
     width: 25%;
@@ -65,7 +69,7 @@
         float: left;
         display: block;
     }
-    
+
     .topnav.responsive {position: relative;}
     .topnav.responsive .icon {
         position: absolute;
