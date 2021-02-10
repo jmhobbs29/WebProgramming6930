@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+body{
+    margin:0
+}
+
 .topnav {
     overflow: hidden;
     background-color: lightgreen;
@@ -37,24 +41,26 @@
 }
 .container_2 .carousel .box1{
     float: left;
-    background-color: blue;
+    background-color: rgb(65, 65, 167);
     width:30%;
     padding:5px;
 }
 .container_2 .carousel .box2{
     float: left;
-    background-color: lightblue;
+    background-color: rgb(209, 87, 87);
     width:30%;
     padding:5px;
 }
 .container_2   .carousel .box3{
     float: right;
-    background-color: blue;
+    background-color: lightgreen;
     width:30%;
     padding:5px;
 }
 
-
+#footer {
+    clear:both;
+}
 
 @media screen and (max-width: 900px) {
     .logo {
