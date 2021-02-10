@@ -18,28 +18,26 @@
     font-size: 17px;
 }
 
-.logo {
-    float: left;
+.container_1 .logo {
     width: 25%;
   }
 
-.carousel {
-    float:rigth;
+.container_2 .carousel {
     width: 75%;
 }
-.carousel .box1{
+.container_2 .carousel .box1{
     float: left;
     background-color: blue;
     width:30%;
     padding:5px;
 }
-.carousel .box2{
+.container_2 .carousel .box2{
     float: left;
     background-color: blue;
     width:30%;
     padding:5px;
 }
-.carousel .box3{
+.container_2 .carousel .box3{
     float: right;
     background-color: blue;
     width:30%;
