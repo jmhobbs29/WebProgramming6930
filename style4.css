@@ -9,6 +9,7 @@
 .topnav {
     overflow: hidden;
     background-color: green;
+    height: 10%;
 }
 
 .topnav a {
