@@ -5,6 +5,14 @@
   float: left;
   width: 20%;
 }
+
+ul{
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+}
+
+
 .menuitem {
   padding: 8px;
   margin-top: 7px;
