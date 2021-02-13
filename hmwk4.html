@@ -10,8 +10,8 @@
             // from dropdownList.html
             function showAnimal(){
                 var selAnimal = document.getElementById("animal");
-                var color = selAnimal.value;
-                document.body.style.backgroundColor = color;
+                var animalImg = selAnimal.value;
+                document.getElementById('body').appendChild(animalImg);
             } // end function
             
             function myFunction() {
