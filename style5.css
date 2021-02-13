@@ -2,71 +2,14 @@
 body {
     margin: 0;
     margin-top: 60px;
-    font-family: Gill Sans;
-    background-color: forestgreen;
     align-items: center;
     text-align: center;
 }
 
+/* initial image parameters */
 .jungle img{
     display: block;
     width: 50%;
     margin-left: auto;
     margin-right: auto;
 }
-
-select#animal option[value="Lion"] {
-    src: url(https://jmhobbs29.github.io/WebProgramming6930/Images/lion.png);
-}
-select#animal option[value="Monkey"] {
-    src: url(https://jmhobbs29.github.io/WebProgramming6930/Images/monkey.png);
-}
-select#animal option[value="Tiger"] {
-    src: url(https://jmhobbs29.github.io/WebProgramming6930/Images/tiger.png);
-}
-select#animal option[value="Elephant"] {
-    src: url(https://jmhobbs29.github.io/WebProgramming6930/Images/elephant.png);
-}
-select#animal option[value="Giraffe"] {
-    src: url(https://jmhobbs29.github.io/WebProgramming6930/Images/giraffe.png);
-}
-
-
-.dropbtn {
-    background-color: #3498DB;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-  }
-  
-.dropbtn:hover, .dropbtn:focus {
-background-color: #2980B9;
-}
-
-.dropdown {
-position: relative;
-display: inline-block;
-}
-
-.dropdown-content {
-display: none;
-position: absolute;
-background-color: #f1f1f1;
-min-width: 160px;
-overflow: auto;
-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-z-index: 1;
-}
-
-.dropdown-content a {
-color: black;
-padding: 12px 16px;
-text-decoration: none;
-display: block;
-}
-
-.dropdown a:hover {background-color: #ddd;}
-
-.show {display: block;}

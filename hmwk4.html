@@ -7,10 +7,15 @@
     </head>
     <body>
         <script type="text/javascript">
+            //declare variables to change the background color 
             var rating, color, combined 
+            
+            //user prompts
             rating = Number(prompt("On a scale 1 to 3, how much do you like jungle animals?"));
             color = prompt("What's your favorite color between green and yellow?")    
             combined = rating + " " + color;
+
+            //based on user prompts, change background color
             if (combined == "1 green") {
                 document.write("<body bgcolor ='lightgreen'>")
             }    
@@ -33,13 +38,16 @@
         
 
         <script type="application/javascript">
+            //function to change animal picture based on user selection
             function showAnimal(){
                 var current = document.getElementById("jungle");
                 var newImg = document.getElementById("animal");
                 current.src = newImg.value;
             } 
-            
+
+        //form to determine user's favorite jungle animal with dropdown option 
         </script>
+        <!-- form layout -->
         <form action=''>
             <h1>What's your favorite jungle animal?</h1>
             <p>Select from the following options:</p>
@@ -56,6 +64,7 @@
                     onclick = "showAnimal()" />
             </fieldset>
         </form>
+        <!-- initial image -->
         <div class="jungle">
             <img id ="jungle" src="https://jmhobbs29.github.io/WebProgramming6930/Images/george.png";>
         </div>
