@@ -9,8 +9,9 @@
         <script type="application/javascript">
             // from dropdownList.html
             function showAnimal(){
-                var selAnimal = document.getElementById("animal");
-                var animalImg = selAnimal.value;
+                var current = document.getElementById("jungle");
+                var newImg = document.getElementById("animal");
+                current.src = newImg.value;
                 document.getElementById('body').appendChild(animalImg);
             } // end function
             
@@ -56,11 +57,11 @@
             <p>Select from the following options:</p>
             <fieldset>
                 <select id="animal">
-                    <option data-image_src="https://jmhobbs29.github.io/WebProgramming6930/Images/Elephant.png";>Elephant</option>
-                    <option data-image_src="https://jmhobbs29.github.io/WebProgramming6930/Images/Giraffe.png";>Giraffe</option>
-                    <option data-image_src="https://jmhobbs29.github.io/WebProgramming6930/Images/Lion.png";>Lion</option>
-                    <option data-image_src="https://jmhobbs29.github.io/WebProgramming6930/Images/monkey.png";>Monkey</option>
-                    <option data-image_src="https://jmhobbs29.github.io/WebProgramming6930/Images/tiger.png";>Tiger</option>
+                    <option>Elephant</option>
+                    <option>Giraffe</option>
+                    <option>Lion</option>
+                    <option>Monkey</option>
+                    <option>Tiger</option>
                 </select>
                 <input type = "button"
                     value = "Show Animal"
@@ -80,7 +81,7 @@
             </div> -->
         </div>
         <div class="jungle">
-            <img src="https://jmhobbs29.github.io/WebProgramming6930/Images/jungle.png";>
+            <img id ="jungle" src="https://jmhobbs29.github.io/WebProgramming6930/Images/jungle.png";>
         </div>
        
     </body>

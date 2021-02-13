@@ -15,6 +15,23 @@ body {
     margin-right: auto;
 }
 
+select#animal option[value="Lion"] {
+    src: url(https://jmhobbs29.github.io/WebProgramming6930/Images/lion.png);
+}
+select#animal option[value="Monkey"] {
+    src: url(https://jmhobbs29.github.io/WebProgramming6930/Images/monkey.png);
+}
+select#animal option[value="Tiger"] {
+    src: url(https://jmhobbs29.github.io/WebProgramming6930/Images/tiger.png);
+}
+select#animal option[value="Elephant"] {
+    src: url(https://jmhobbs29.github.io/WebProgramming6930/Images/elephant.png);
+}
+select#animal option[value="Giraffe"] {
+    src: url(https://jmhobbs29.github.io/WebProgramming6930/Images/giraffe.png);
+}
+
+
 .dropbtn {
     background-color: #3498DB;
     color: white;
