@@ -5,11 +5,14 @@ body {
     font-family: sans-serif;
     background-color: aqua;
     align-items: center;
+    text-align: center;
 }
 
 .jungle img{
-    height: 75%;
-
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .dropbtn {
