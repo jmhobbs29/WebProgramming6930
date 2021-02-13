@@ -1,0 +1,7 @@
+#main body style
+body {
+    margin: 0;
+    margin-top: 60px;
+    font-family: sans-serif;
+    background-color: aqua;
+}
