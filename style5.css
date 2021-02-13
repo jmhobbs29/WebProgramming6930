@@ -6,7 +6,7 @@ body {
     background-color: aqua;
 }
 
-#jungle img{
-    height: 80%;
+.jungle img{
+    height: 75%;
     align-items: center;
 }
