@@ -11,8 +11,9 @@
             rating = Number(prompt("On a scale 1 to 3, how much do you like jungle animals?"));
             color = prompt("What's your favorite color between green and yellow?")    
             combined = rating + " " + color;
-            document.write(combined);
-            
+            if (combined == "2 green") {
+                document.write("<body bgcolor='lightgreen'>")
+            }       
         </script>
         
 
