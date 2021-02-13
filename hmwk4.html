@@ -1,10 +1,27 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> Assignment 1 example Dr. Smith</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Jungle Pictures</title>
         <link rel="stylesheet" href="style5.css">
         <script type="text/javascript">
-        
+            function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+                }
+            }
+            }
             /*  declaration of variables and some variable assignment and writing to the web page*/
             // var variable_1, variable_2, variable_3;
             
@@ -27,6 +44,17 @@
         </script>
     </head>
     <body>
+        <h1>What's your favorite jungle animal?</h1>
+        <p>Select from the following options:</p>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Jungle Animal</button>
+            <div id="myDropdown" class="dropdown-content">
+              <p>Lion</p>
+              <p>Tiger</p>
+              <p>Elephant</p>
+              <p>Giraffe</p>
+            </div>
+        </div>
         <div class="jungle">
             <img src="https://jmhobbs29.github.io/WebProgramming6930/Images/jungle.png";>
         </div>
