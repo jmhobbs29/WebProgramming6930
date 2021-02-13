@@ -6,6 +6,16 @@
         <link rel="stylesheet" href="style5.css">
     </head>
     <body>
+        <script type="text/javascript">
+            var rating, color, combined 
+            rating = Number(prompt("On a scale 1 to 3, how much do you like jungle animals?"));
+            color = prompt("What's your favorite color between green and yellow?")    
+            combined = rating + color;
+
+            
+        </script>
+        
+
         <script type="application/javascript">
             // from dropdownList.html
             function showAnimal(){
@@ -14,23 +24,7 @@
                 current.src = newImg.value;
             } // end function
             
-            function myFunction() {
-                document.getElementById("myDropdown").classList.toggle("show");
-            }
 
-            // Close the dropdown if the user clicks outside of it
-            window.onclick = function(event) {
-            if (!event.target.matches('.dropbtn')) {
-                var dropdowns = document.getElementsByClassName("dropdown-content");
-                var i;
-                for (i = 0; i < dropdowns.length; i++) {
-                var openDropdown = dropdowns[i];
-                if (openDropdown.classList.contains('show')) {
-                    openDropdown.classList.remove('show');
-                }
-                }
-            }
-            }
             /*  declaration of variables and some variable assignment and writing to the web page*/
             // var variable_1, variable_2, variable_3;
             
@@ -67,20 +61,8 @@
                     onclick = "showAnimal()" />
             </fieldset>
         </form>
-            
-            
-            
-            <!-- <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">Jungle Animal</button>
-            <div id="myDropdown" class="dropdown-content">
-              <a>Lion</a>
-              <a>Tiger</a>
-              <a>Elephant</a>
-              <a>Giraffe</a>
-            </div> -->
-        </div>
         <div class="jungle">
-            <img id ="jungle" src="https://jmhobbs29.github.io/WebProgramming6930/Images/jungle.png";>
+            <img id ="jungle" src="https://jmhobbs29.github.io/WebProgramming6930/Images/george.png";>
         </div>
        
     </body>
