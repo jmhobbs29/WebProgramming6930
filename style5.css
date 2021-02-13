@@ -5,3 +5,7 @@ body {
     font-family: sans-serif;
     background-color: aqua;
 }
+
+#jungle img{
+    height: 80%;
+}
