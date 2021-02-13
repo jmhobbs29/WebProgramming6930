@@ -7,6 +7,13 @@
     </head>
     <body>
         <script type="application/javascript">
+            // from dropdownList.html
+            function showAnimal(){
+                var selAnimal = document.getElementById("animal");
+                var color = selAnimal.value;
+                document.body.style.backgroundColor = color;
+            } // end function
+            
             function myFunction() {
                 document.getElementById("myDropdown").classList.toggle("show");
             }
@@ -44,16 +51,33 @@
                 
             
         </script>
-        <h1>What's your favorite jungle animal?</h1>
-        <p>Select from the following options:</p>
-        <div class="dropdown">
+        <form action=''>
+            <h1>What's your favorite jungle animal?</h1>
+            <p>Select from the following options:</p>
+            <fieldset>
+                <select if="animal">
+                    <option data-image_src="https://jmhobbs29.github.io/WebProgramming6930/Images/Elephant.png";>Elephant</option>
+                    <option data-image_src="https://jmhobbs29.github.io/WebProgramming6930/Images/Giraffe.png";>Giraffe</option>
+                    <option data-image_src="https://jmhobbs29.github.io/WebProgramming6930/Images/Lion.png";>Lion</option>
+                    <option data-image_src="https://jmhobbs29.github.io/WebProgramming6930/Images/monkey.png";>Monkey</option>
+                    <option data-image_src="https://jmhobbs29.github.io/WebProgramming6930/Images/tiger.png";>Tiger</option>
+                </select>
+                <input type = "button"
+                    value = "Show Animal"
+                    onclick = "showAnimal()" />
+            </fieldset>
+        </form>
+            
+            
+            
+            <!-- <div class="dropdown">
             <button onclick="myFunction()" class="dropbtn">Jungle Animal</button>
             <div id="myDropdown" class="dropdown-content">
               <a>Lion</a>
               <a>Tiger</a>
               <a>Elephant</a>
               <a>Giraffe</a>
-            </div>
+            </div> -->
         </div>
         <div class="jungle">
             <img src="https://jmhobbs29.github.io/WebProgramming6930/Images/jungle.png";>
