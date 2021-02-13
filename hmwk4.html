@@ -11,9 +11,24 @@
             rating = Number(prompt("On a scale 1 to 3, how much do you like jungle animals?"));
             color = prompt("What's your favorite color between green and yellow?")    
             combined = rating + " " + color;
-            if (combined == "2 green") {
-                document.write("<body bgcolor='lightgreen'>")
-            }       
+            if (combined == "1 green") {
+                document.write("<body bgcolor='rgb(230, 255, 230)'>")
+            }    
+            else if (combined == "1 yellow") {
+                document.write("<body bgcolor='rgb(255, 255, 230)'>")
+            }
+            else if (rating ==2 && color == "green"){
+                document.write("<body bgcolor='hsl(120, 100%, 80%)'>")
+            }  
+            else if (rating ==2 && color == "yellow"){
+                document.write("<body bgcolor='hsl(60, 100%, 80%)'>")
+            }     
+            else if (rating == 3 && color == "green"){
+                document.write("<body bgcolor ='#4dff4d'>")
+            }
+            else if (rating == 3 && color == "yellow"){
+                document.write("<body bgcolor ='#ffff4d'>")
+            }
         </script>
         
 
