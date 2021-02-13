@@ -12,7 +12,7 @@
             color = prompt("What's your favorite color between green and yellow?")    
             combined = rating + " " + color;
             if (combined == "1 green") {
-                document.write("<body bgcolor='rgb(230, 255, 230)'>")
+                document.document.body.style.backgroundColor = rgb(230, 255, 230);
             }    
             else if (combined == "1 yellow") {
                 document.write("<body bgcolor='rgb(255, 255, 230)'>")
@@ -33,32 +33,11 @@
         
 
         <script type="application/javascript">
-            // from dropdownList.html
             function showAnimal(){
                 var current = document.getElementById("jungle");
                 var newImg = document.getElementById("animal");
                 current.src = newImg.value;
-            } // end function
-            
-
-            /*  declaration of variables and some variable assignment and writing to the web page*/
-            // var variable_1, variable_2, variable_3;
-            
-            // variable_1 = Number(prompt("give me a number!"));
-            // variable_2 = -2;
-            // document.write   ("<br><h2> variable_2 is " + variable_2 + "</h2>");
-            
-            
-            // variable_3 = variable_1 + variable_2 + 1;
-            
-            // if (variable_3 == 0)
-            //     { document.write("It was true, <br><h3> variable_3 is " + variable_3 + "</h3>");
-            //     document.write("<body bgcolor='#E6E6FA'>");
-            //     }
-            //     else 
-            //             { document.write("It was false, <br><h3> variable_3 is " + variable_3 + "</h3>");
-            //     }
-                
+            } 
             
         </script>
         <form action=''>
