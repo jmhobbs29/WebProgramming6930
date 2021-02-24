@@ -24,6 +24,9 @@
             <option value="BOMS">Booker Middle School</option>
             <option value="AMS">Ashton Middle School</option>
         </select>
+        <input type = "button"
+                    value = "Get Info"
+                    onclick = "showSchoolInfo()" />
     </fieldset>
     <fieldset>
         <legend>Student Registration Form</legend>
@@ -54,7 +57,7 @@
         <label for="prefSchool">Preferred Middle School:</label> 
         <select>
             <option value="SMS">Sarasota Middle School</option>
-            <option value="MMS">McINtosh Middle School</option>
+            <option value="MMS">McIntosh Middle School</option>
             <option value="BMS">Brookside Middle School</option>
             <option value="BOMS">Booker Middle School</option>
             <option value="AMS">Ashton Middle School</option>
@@ -75,6 +78,28 @@
         var newImg = document.getElementById("animal");
         current.src = newImg.value;
     } 
+</script>
+<script type="application/javascript">
+    function showSchoolInfo(){
+        var school = document.getElementById("school");
+
+        //based on user prompts, change background color
+        if (school == "Sarasota Middle School") {
+            document.write("<body bgcolor ='lightgreen'>")
+            }    
+        else if (school == "McIntosh Middle School") {
+            document.write("<body bgcolor ='lightgoldenrodyellow'>")
+            }
+        else if (school == "Brookside Middle School") {
+            document.write("<body bgcolor ='lightgoldenrodyellow'>")
+            }
+        else if (school == "Booker Middle School") {
+            document.write("<body bgcolor ='lightgoldenrodyellow'>")
+            }
+        else if (school == "Ashton Middle School") {
+            document.write("<body bgcolor ='yellow'>")
+            }
+    }   
 </script>
 </body>
 </html>
