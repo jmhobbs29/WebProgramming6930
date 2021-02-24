@@ -8,6 +8,37 @@
 <body>
 <h1> Sarasota Middle Schools (grades 6-8)</h1>
 
+<script type="application/javascript">
+    //function to change animal picture based on user selection
+    function sendEmail(){
+        var current = document.getElementById("jungle");
+        var newImg = document.getElementById("animal");
+        current.src = newImg.value;
+    } 
+</script>
+<script type="application/javascript">
+    function showSchoolInfo(){
+        var school = document.getElementById("school");
+
+        //based on user prompts, change background color
+        if (school == "Sarasota Middle School") {
+            document.write("<body bgcolor ='lightgreen'>")
+            }    
+        else if (school == "McIntosh Middle School") {
+            document.write("<body bgcolor ='lightgoldenrodyellow'>")
+            }
+        else if (school == "Brookside Middle School") {
+            document.write("<body bgcolor ='lightgoldenrodyellow'>")
+            }
+        else if (school == "Booker Middle School") {
+            document.write("<body bgcolor ='lightgoldenrodyellow'>")
+            }
+        else if (school == "Ashton Middle School") {
+            document.write("<body bgcolor ='yellow'>")
+            }
+    }   
+</script>
+
 
 <!-- Form for parents to put their child on a waiting list for a school. The form should ask for relevant demographic 
     information, name, age, gender, upcoming grade, and a drop down selector for which school you want your child to 
@@ -71,35 +102,6 @@
             onclick = "submit()" />
     </fieldset>
 </form>
-<script type="application/javascript">
-    //function to change animal picture based on user selection
-    function sendEmail(){
-        var current = document.getElementById("jungle");
-        var newImg = document.getElementById("animal");
-        current.src = newImg.value;
-    } 
-</script>
-<script type="application/javascript">
-    function showSchoolInfo(){
-        var school = document.getElementById("school");
 
-        //based on user prompts, change background color
-        if (school == "Sarasota Middle School") {
-            document.write("<body bgcolor ='lightgreen'>")
-            }    
-        else if (school == "McIntosh Middle School") {
-            document.write("<body bgcolor ='lightgoldenrodyellow'>")
-            }
-        else if (school == "Brookside Middle School") {
-            document.write("<body bgcolor ='lightgoldenrodyellow'>")
-            }
-        else if (school == "Booker Middle School") {
-            document.write("<body bgcolor ='lightgoldenrodyellow'>")
-            }
-        else if (school == "Ashton Middle School") {
-            document.write("<body bgcolor ='yellow'>")
-            }
-    }   
-</script>
 </body>
 </html>
