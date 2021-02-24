@@ -1,0 +1,37 @@
+<html>
+<!--html stands for hypertext markup language. (Chris)-->
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Schools</title>
+    <link rel="stylesheet" href="style6.css">
+</head>
+<body>
+<h1> Hello World - my blue dog flies at night. </h1>
+<form action=''>
+    <label for="fname">First Name:</label>
+    <input type="text" id="fname" name="fname" value="John">
+<br>
+    <label for="lname">Last Name:</label>
+    <input type="text" id="lname" name="lname" value="Doe">
+<br>
+    <label for="gender">Gender:</label>
+    <input type="radio" id="male" name="gender" value="male">
+    <input type="radio" id="female" name="gender" value="female">
+<br>
+    <label for=""
+<br>
+    <input type = "button"
+           value = "Submit"
+           onclick = "sendEmail()" />
+
+</form>
+<script type="application/javascript">
+    //function to change animal picture based on user selection
+    function sendEmail(){
+        var current = document.getElementById("jungle");
+        var newImg = document.getElementById("animal");
+        current.src = newImg.value;
+    } 
+</script>
+</body>
+</html>
