@@ -10,12 +10,14 @@
 
 <script type="application/javascript">
     //function to change animal picture based on user selection
-    function sendEmail(){
+    function submit(){
         var current = document.getElementById("jungle");
         var newImg = document.getElementById("animal");
         current.src = newImg.value;
     } 
 </script>
+
+
 <script type="text/javascript">
     function showSchoolInfo(){
         var school = document.getElementById("school").value;
@@ -60,7 +62,7 @@
                     onclick = "showSchoolInfo()" />
     </fieldset>
 </form>
-<form action="hobbs2@usf.edu" method="post" enctype="text/plain">
+<form action="mailto:hobbs2@usf.edu" method="post" enctype="text/plain">
     <fieldset>
         <legend>Student Registration Form</legend>
         <label for="fname">First Name:</label>
@@ -96,12 +98,10 @@
             <option value="AMS">Ashton Middle School</option>
         </select>
     <br>
-        <label for="email">Send Email</label>
-        <input type="checkbox" id="email" name="email">
-    <br>
         <input type = "button"
             value = "Submit"
             onclick = "submit()" />
+    <p>Confirmation email will be sent upons clicking Submit.</p>
     </fieldset>
 </form>
 
