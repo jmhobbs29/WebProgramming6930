@@ -17,3 +17,74 @@ form{
     width: 100%;
 }
 
+
+
+
+
+
+/* Buttons for all homework assignments */
+.button {
+    border: white;
+    color: grey;
+    /* padding: 15px 32px; */
+    height: 50px;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+.button1 {background-color: aquamarine;}
+.button1:hover {
+    background-color: white;
+    border: 2px solid aquamarine;
+}
+.button2 {background-color: aquamarine;}
+.button2:hover {
+    background-color: white;
+    border: 2px solid aquamarine;
+}
+.button3 {background-color: aquamarine;}
+.button3:hover {
+    background-color: white;
+    border: 2px solid aquamarine;
+}
+.button4 {background-color: aquamarine;}
+.button4:hover {
+    background-color: white;
+    border: 2px solid aquamarine;
+}
+.button5 {background-color: aquamarine;}
+.button5:hover {
+    background-color: white;
+    border: 2px solid aquamarine;
+}
+.button6 {background-color: aquamarine;}
+.button6:hover {
+    background-color: white;
+    border: 2px solid aquamarine;
+}
+.button7 {background-color: aquamarine;}
+/* .button7:hover {
+    background-color: white;
+    border: 2px solid aquamarine;
+} */
+.button8 {background-color: aquamarine;}
+.button8:hover {
+    background-color: white;
+    border: 2px solid aquamarine;
+}
+.button9 {background-color: aquamarine;}
+.button9:hover {
+    background-color: white;
+    border: 2px solid aquamarine;
+}
+.button10 {background-color: aquamarine;}
+.button10:hover {
+    background-color: white;
+    border: 2px solid aquamarine;
+}
