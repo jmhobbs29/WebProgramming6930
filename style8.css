@@ -5,6 +5,7 @@ form{
 #image {
     align-items: center;
     width: 50%;
+    height:auto;
 }
 #topbox {
     align-items: center;
