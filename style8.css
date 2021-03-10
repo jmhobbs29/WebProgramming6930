@@ -2,7 +2,7 @@ form{
     text-align: center;
     height: 25%;
 }
-#image {
+.image {
     align-items: center;
     width: 50%;
     height:auto;
