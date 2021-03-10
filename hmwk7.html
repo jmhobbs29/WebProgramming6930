@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style8.css">
     <script type="text/javascript">
         
+        // constructor problem with properties subject and amount
         function Problem(subject, amount){
             this.subject = subject;
             this.amount = amount;
@@ -14,12 +15,12 @@
                 var problems = "You want " + this.amount + this.subject + " problems!";
                 writeText(problems, "problems");
 
-                if (amount == 5){
+                if (amount == 5 && subject == "Addition"){
                     
                 }
             }
         }
-
+        // function to show problems in problembox
         function showProblems() {
             var problems;
 
@@ -36,7 +37,9 @@
     <!-- <div class="image">
         <img src="Images/math.jpg">
     </div> -->
-    <div id="topbox">
+
+    <!-- topbox has dropdowns to select subject and number of problems to complete -->
+    <div id="topbox"></div>
         <form action=''>
                 <label for="subject">Select Math Subject:</label> 
                 <select>
@@ -59,7 +62,16 @@
         <p id="problems" style="text-align:center"></p>
     </div>
     <div id="problembox">
-
+        <!-- button to store current time -->
+        <input type = "button"
+                    value = "Start Quiz"
+                    onclick="start();" />
+        <!-- Worksheet image based on requested number of problems. -->
+        <img src="">
+        <!-- button to get current time then subtract from start time for total time -->
+        <input type = "button"
+                    value = "Done!"
+                    onclick = "stopWatch();" />
     </div>
     
 </body>
