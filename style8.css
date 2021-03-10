@@ -15,6 +15,7 @@ form{
 
 #problembox {
     width: 100%;
+    text-align:center;
     align-items:center;
     border: 2px solid black;
 }
