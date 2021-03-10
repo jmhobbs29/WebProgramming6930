@@ -5,12 +5,26 @@
     <title> Education</title>
     <link rel="stylesheet" href="style8.css">
     <script type="text/javascript">
+        
         function Problem(subject, amount){
             this.subject = subject;
             this.amount = amount;
+            this.showProbs = function (){
 
-            var problems = "You want " + this.amount + this.subject + " problems!"
-            writeText(problems, "problems")
+                var problems = "You want " + this.amount + this.subject + " problems!";
+                writeText(problems, "problems");
+            }
+        }
+
+        function showProblems() {
+            var problems;
+
+            var probs = new Problem(document.frm.subject.value, document.frm.amount.value);
+            probs.showProbs();
+        }
+
+        function writeText(txt, destination){
+            document.getElementById(destination).innerHTML=txt;
         }
     </script>
 </head>
@@ -36,7 +50,7 @@
                 </select>
                 <input type = "button"
                             value = "Get Problems"
-                            onclick = "showProblems()" />
+                            onclick = "showProblems();" />
         </form>
         <p id="problems" style="text-align:center"></p>
     </div>
