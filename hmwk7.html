@@ -47,7 +47,7 @@
                 writeText(stopTime, "stopTime");
 
                 var timeSoFar = this.elapsedTime();
-                var overallTime = "You took "+ this.timesofar + " minutes.";
+                var overallTime = " "+ this.timesofar + " minutes.";
                 writeText(overallTime, "timer")
             }
 
@@ -111,7 +111,7 @@
                     value = "Done!"
                     onclick = "probs.stopWatch();" />
                     <p id="stopTime">Your stop time is: </p>
-                    <p id="timer"></p>
+                    <p id="timer">In total you took: </p>
     </div>
     
 </body>
