@@ -15,7 +15,7 @@
                 var problems = "You want " + this.amount + this.subject + " problems!";
                 writeText(problems, "problems");
 
-                if (this.amount == 5 && this.subject == "Addition"){
+                if (this.amount == "5" && this.subject == "Addition"){
                     $(document).ready(function(){
                         var $quiz = $("<img src='https://jmhobbs29.github.io/WebProgrammging6930/Images/5add.jpg' width='50%>");
                         $('#section2').append($quiz);
@@ -29,8 +29,9 @@
         // function to show problems in problembox
         function showProblems () {
             var problems;
+            var probs;
 
-            var probs = new Problem(document.frm.subject.value, document.frm.amount.value);
+            probs = new Problem(document.frm.subject.value, document.frm.amount.value);
             probs.showProbs();
         }
 
