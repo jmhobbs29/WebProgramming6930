@@ -18,7 +18,7 @@
             this.start = callGetTime();
             this.showProbs = function (){
 
-                var problems = "You want " + this.amount + this.subject + " problems!";
+                var problems = " " + this.amount + this.subject + " problems!";
                 writeText(problems, "problems");
 
                 if (this.amount == "5" && this.subject == "Addition"){
@@ -96,7 +96,7 @@
                             value = "Get Problems"
                             onclick = "showProblems();" />
         </form>
-        <p id="problems" style="text-align:center"></p>
+        <p id="problems">You want to do: </p>
     </div>
     <div id="problembox">
         <!-- button to store current time -->
