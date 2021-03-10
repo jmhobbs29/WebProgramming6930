@@ -5,11 +5,17 @@
     <title> Education</title>
     <link rel="stylesheet" href="style8.css">
     <script type="text/javascript">
-        
+                  
+        function callGetTime() {   
+            var d = new Date();
+            return d.getTime();
+        }
+ 
         // constructor problem with properties subject and amount
         function Problem(subject, amount){
             this.subject = subject;
             this.amount = amount;
+            this.start = callGetTime();
             this.showProbs = function (){
 
                 var problems = "You want " + this.amount + this.subject + " problems!";
@@ -22,6 +28,24 @@
                     });
                 }
             }
+            this.elapsedTime = function () {
+                return ((callGetTime() - this.start)/60000).toFixed(0);
+            }
+            
+            this.start = function () {
+                writeText(startTime, "startTime")
+            }
+
+            this.stopWatch = function (){
+                var stopTime = callGetTime();
+                writeText(stopTime, "stopTime");
+                
+                var timeSoFar = this.elapsedTime();
+                var overallTime = "You took "+ this.timesofar + " minutes.";
+                writeText(overallTime, "timer")
+            }
+
+
         }
 
 
@@ -72,13 +96,16 @@
         <!-- button to store current time -->
         <input type = "button"
                     value = "Start Quiz"
-                    onclick="start();" />
+                    onclick="probs.start();" />
         <!-- Worksheet based on requested number of problems. -->
+        <p id="startTime">Your start time is: </p>
         <div id="section2"></div>
         <!-- button to get current time then subtract from start time for total time -->
         <input type = "button"
                     value = "Done!"
-                    onclick = "stopWatch();" />
+                    onclick = "probs.stopWatch();" />
+                    <p id="stopTime">Your stop time is: </p>
+                    <p id="timer"></p>
     </div>
     
 </body>
