@@ -15,11 +15,17 @@
                 var problems = "You want " + this.amount + this.subject + " problems!";
                 writeText(problems, "problems");
 
-                if (amount == 5 && subject == "Addition"){
-                    
+                if (this.amount == 5 && this.subject == "Addition"){
+                    $(document).ready(function(){
+                        var $quiz = $("<img src='https://jmhobbs29.github.io/WebProgrammging6930/Images/5add.jpg' width='50%>");
+                        $('#section2').append($quiz);
+                    });
                 }
             }
         }
+
+
+        
         // function to show problems in problembox
         function showProblems() {
             var problems;
@@ -67,7 +73,7 @@
                     value = "Start Quiz"
                     onclick="start();" />
         <!-- Worksheet based on requested number of problems. -->
-        
+        <div id="section2"></div>
         <!-- button to get current time then subtract from start time for total time -->
         <input type = "button"
                     value = "Done!"
