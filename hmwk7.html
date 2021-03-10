@@ -27,6 +27,12 @@
                         $('#section2').append($quiz);
                     });
                 }
+                else {
+                    $(document).ready(function(){
+                        var $quiz = $("<p>Document Not Available Yet. Check Back Later!</p>");
+                        $('#section2').append($quiz);
+                    });
+                }
             }
             this.elapsedTime = function () {
                 return ((callGetTime() - this.start)/60000).toFixed(0);
@@ -39,7 +45,7 @@
             this.stopWatch = function (){
                 var stopTime = callGetTime();
                 writeText(stopTime, "stopTime");
-                
+
                 var timeSoFar = this.elapsedTime();
                 var overallTime = "You took "+ this.timesofar + " minutes.";
                 writeText(overallTime, "timer")
