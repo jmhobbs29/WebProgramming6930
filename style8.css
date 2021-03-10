@@ -2,6 +2,10 @@ form{
     text-align: center;
     height: 25%;
 }
+#image {
+    align-items: center;
+    width: 50%;
+}
 #topbox {
     align-items: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
