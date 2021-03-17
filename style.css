@@ -60,7 +60,13 @@ section {
     transition-duration: 0.4s;
     cursor: pointer;
   }
-  
+
+.button0 {background-color: aquamarine;}
+/* .button0:hover {
+    background-color: white;
+    border: 2px solid aquamarine;
+} */
+
 .button1 {background-color: aquamarine;}
 .button1:hover {
     background-color: white;
@@ -103,11 +109,6 @@ section {
 }
 .button9 {background-color: aquamarine;}
 .button9:hover {
-    background-color: white;
-    border: 2px solid aquamarine;
-}
-.button10 {background-color: aquamarine;}
-.button10:hover {
     background-color: white;
     border: 2px solid aquamarine;
 }

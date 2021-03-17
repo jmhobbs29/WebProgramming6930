@@ -2,8 +2,8 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> Education</title>
-    <link rel="stylesheet" href="style8.css">
+    <title>Week 8</title>
+    <link rel="stylesheet" href="style9.css">
     <script type="text/javascript">
                   
         function callGetTime() {   
@@ -68,6 +68,44 @@
         function writeText(txt, destination){
             document.getElementById(destination).innerHTML=txt;
         }
+        
+        var participants = new Array;
+    
+        function showPpl()
+        {
+        document.getElementById("demo").innerHTML = "Thanks to all who have practiced their math with us: " + participants; 
+            
+        }
+        
+        function addPpl()
+        {
+            participants.push();
+            showPpl();        
+        }
+
+        function writePpl(){
+            newPpl = new String();
+            
+            for (var i=0; i<my_array.length; i++)
+            {
+                if (i == my_array.length-1){
+                    newPpl += "and ";
+                    newPpl += my_array[i];
+                }
+                else{
+                    newPpl += my_array[i];
+                    newPpl += ", ";
+                }
+            }
+        }
+
+        function add_an_element(){
+            var array_length, i;
+            array_length = participants.length;
+            i = parseInt(prompt("Input a number to add to the array"));
+
+            participants[array_length]= i; 
+        }
     </script>
 </head>
 <body>
@@ -116,6 +154,19 @@
     
 </body>
 <footer>
+    <p>Let us know who did such a great job practicing their math today!</p>
+    <br>
+    <input type= "text"
+                id= "newPpl"
+                name= "newPpl"
+                value= "your name">
+    <br>
+    <input type= "button" 
+                value="addPpl" 
+                onClick ="addPpl()" >
+    <br>
+    <p id="People"></p>
+    <br>
     <div class="buttons">
         <button class="button button0"onclick="window.location.href='https://jmhobbs29.github.io/WebProgramming6930/hmwk0';">HMWK 0</button>
         <button class="button button1"onclick="window.location.href='https://jmhobbs29.github.io/WebProgramming6930/hmwk1';">HMWK 1</button>

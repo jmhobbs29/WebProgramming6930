@@ -42,6 +42,11 @@ section {
     cursor: pointer;
   }
 
+.button0 {background-color: lightpink;}
+.button0:hover {
+    background-color: white;
+    border: 2px solid lightpink;
+}
 
 /*each button has hoover functione except current page.*/  
 .button1 {background-color: lightpink;}
