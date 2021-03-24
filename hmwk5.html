@@ -9,32 +9,27 @@
 <h1> Sarasota Middle Schools (grades 6-8)</h1>
 
 <script type="application/javascript">
-    //function to change animal picture based on user selection
+
     function submit(){
-        var current = document.getElementById("jungle");
-        var newImg = document.getElementById("animal");
-        current.src = newImg.value;
+       document.getElementById("confirmation").innerHTML = "Your registration form has been mailed to the director!"
     } 
 </script>
 
 
 <script type="text/javascript">
     function showSchoolInfo(){
-        var school = document.getElementById("school");
-        if (school == "Sarasota Middle School") {
-            document.write("Hello")
+        var school = document.getElementById("school").value;
+        if (school == "SMS") {
+            document.getElementById("schoolInfo").innerHTML = "4826 Ashton Rd Sarasota, FL 34233 (941) 361-6464"
             }    
         else if (school == "MMS") {
-            document.write("<body bgcolor ='lightgoldenrodyellow'>")
+            document.getElementById("schoolInfo").innerHTML = "701 McIntosh Rd Sarasota, FL 34232 (941) 361-6520"
             }
-        else if (school == "Brookside Middle School") {
-            document.write("<body bgcolor ='lightgoldenrodyellow'>")
+        else if (school == "BMS") {
+            document.getElementById("schoolInfo").innerHTML = "3636 S Shade Ave Sarasota, FL 34239 (941) 361-6472"
             }
-        else if (school == "Booker Middle School") {
-            document.write("<body bgcolor ='lightgoldenrodyellow'>")
-            }
-        else if (school == "Ashton Middle School") {
-            document.write("<body bgcolor ='yellow'>")
+        else if (school == "BOMS") {
+            document.getElementById("schoolInfo").innerHTML = "2250 Myrtle St Sarasota, FL 34234 (941) 359-5824"
             }
     }   
 </script>
@@ -48,19 +43,19 @@
     <fieldset>
         <legend>Middle School Information</legend>
         <label for="school">Select Middle School:</label> 
-        <select>
+        <select id="school">
             <option value="SMS">Sarasota Middle School</option>
             <option value="MMS">McIntosh Middle School</option>
             <option value="BMS">Brookside Middle School</option>
             <option value="BOMS">Booker Middle School</option>
-            <option value="AMS">Ashton Middle School</option>
         </select>
         <input type = "button"
                     value = "Get Info"
                     onclick = "showSchoolInfo()" />
     </fieldset>
+	<p id="schoolInfo">School info</p>
 </form>
-<form action="mailto:hobbs2@usf.edu" method="post">
+<form action="mailto:hobbs2@usf.edu" method="post" enctype="text/plain">
     <fieldset>
         <legend>Student Registration Form</legend>
         <label for="fname">First Name:</label>
@@ -96,9 +91,9 @@
             <option value="AMS">Ashton Middle School</option>
         </select>
     <br>
-        <input type = "button"
-            value = "Submit"/>
-    <p>test A confirmation email will be sent upon clicking Submit.</p>
+        <input type = "submit"
+               value = "Send"/>
+    
     </fieldset>
 </form>
 
