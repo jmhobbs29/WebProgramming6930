@@ -2,72 +2,53 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> Education</title>
+    <title>Education</title>
     <link rel="stylesheet" href="style8.css">
     <script type="text/javascript">
-                  
-        function callGetTime() {   
-            var d = new Date();
-            return d.getTime();
-        }
- 
-        // constructor problem with properties subject and amount
-        function Problem(subject, amount){
-            this.subject = subject;
-            this.amount = amount;
-            this.start = callGetTime();
-            this.showProbs = function (){
+          
+        // constructor Student with properties name, grade and age
+        function Student(stud, algebra){
+			this.name = stud.name.value;
+			this.schgrade = stud.schgrade.value;
+			this.age = stud.age.value;
+			this.q1 = algebra.q1.value;
+			this.q2 = algebra.q2.value;
+			this.q3 = algebra.q3.value;
+			this.q4 = algebra.q4.value;
+			this.q5 = algebra.q5.value;
+			
+			this.graded = function () {
+				return "Hello";
+			}
+			
+//			if (algebra.q1.value == "5"){
+//				document.getElementById
+//				("grade").innerHTML = "Correct";
+//			} else {
+//				grade.innerHTML = "Try Again"
+//			}
+		}
+	</script>
 
-                var problems = " " + this.amount + this.subject + " problems!";
-                writeText(problems, "problems");
+     <script type="text/javascript">
+        // function to check problems in problembox
+        function problemCheck(){
+//            var stud = document.getElementById("studentInfo");
+//            var algebra = document.getElementById("algebra");
+//			var student = new Student(stud, algebra);
+//			var grad = document.getElementById("grade");
+//			
+//			grad.innerHTML = student.graded();
+//								
+			document.getElementById("grade").innerHTML = "Hello, my name is Jamie.";
 
-                if (this.amount == "5" && this.subject == "Addition"){
-                    $(document).ready(function(){
-                        var $quiz = $("<img src='https://jmhobbs29.github.io/WebProgrammging6930/Images/5add.jpg' width='50%>");
-                        $('#section2').append($quiz);
-                    });
-                }
-                else {
-                    $(document).ready(function(){
-                        var $quiz = $("<p>Document Not Available Yet. Check Back Later!</p>");
-                        $('#section2').append($quiz);
-                    });
-                }
-            }
-            this.elapsedTime = function () {
-                return ((callGetTime() - this.start)/60000).toFixed(0);
-            }
+			
             
-            this.start = function () {
-                writeText(startTime, "startTime")
-            }
-
-            this.stopWatch = function (){
-                var stopTime = callGetTime();
-                writeText(stopTime, "stopTime");
-
-                var timeSoFar = this.elapsedTime();
-                var overallTime = " "+ this.timesofar + " minutes.";
-                writeText(overallTime, "timer")
-            }
-
-
         }
 
-
-        
-        // function to show problems in problembox
-        function showProblems () {
-            var problems;
-            var probs;
-
-            probs = new Problem(document.frm.subject.value, document.frm.amount.value);
-            probs.showProbs();
-        }
-
-        function writeText(txt, destination){
-            document.getElementById(destination).innerHTML=txt;
-        }
+//        function writeText(txt, destination){
+//            document.getElementById(destination).innerHTML=txt;
+//        }
     </script>
 </head>
 <body>
@@ -76,42 +57,61 @@
     </div> -->
 
     <!-- topbox has dropdowns to select subject and number of problems to complete -->
-    <div id="topbox"></div>
-        <form action=''>
-                <label for="subject">Select Math Subject:</label> 
-                <select>
-                    <option value="Addition">Addition</option>
-                    <option value="Division">Division</option>
-                    <option value="Multiplication">Multiplication</option>
-                    <option value="Subtraction">Subtraction</option>
-                </select>
-                <label for="problems">Select Number of Problems:</label> 
-                <select>
-                    <option value="5">5</option>
-                    <option value="10">10</option>
-                    <option value="15">15</option>
-                    <option value="20">20</option>
-                </select>
-                <input type = "button"
-                            value = "Get Problems"
-                            onclick = "showProblems();" />
+	
+	 <script type="text/javascript">
+	// function to check problems in problembox
+		function problemCheck(){
+//            var stud = document.getElementById("studentInfo");
+//            var algebra = document.getElementById("algebra");
+//			var student = new Student(stud, algebra);
+//			var grad = document.getElementById("grade");
+//			
+//			grad.innerHTML = student.graded();
+//								
+			document.getElementById("grade").innerHTML = "Hello, my name is Jamie.";
+
+
+
+		}
+
+//        function writeText(txt, destination){
+//            document.getElementById(destination).innerHTML=txt;
+//        }
+    </script>
+    <div class="topbox">
+        <form action='' id="studentInfo">
+			<label for="name">Name: </label>
+			<input type="text" id="name"><br>
+			<label for"schgrade">Grade: </label>
+			<input type="text" id="grade"><br>
+			<label for="age">Age: </label>
+			<input type="text" id="age">
+                
         </form>
-        <p id="problems">You want to do: </p>
     </div>
-    <div id="problembox">
-        <!-- button to store current time -->
-        <input type = "button"
-                    value = "Start Quiz"
-                    onclick="probs.start();" />
-        <!-- Worksheet based on requested number of problems. -->
-        <p id="startTime">Your start time is: </p>
-        <div id="section2"></div>
-        <!-- button to get current time then subtract from start time for total time -->
-        <input type = "button"
-                    value = "Done!"
-                    onclick = "probs.stopWatch();" />
-                    <p id="stopTime">Your stop time is: </p>
-                    <p id="timer">In total you took: </p>
+	<div class="text">
+		<h2>Let's Do Some Alegbra!</h2>
+	</div>
+
+    <div class="problembox">
+        <div class="section2">
+			<form id="algebra" action=''>
+				<label for="q1">1. 2a+7=17, a=</label>
+				<input type="text" id="q1"><br>
+				<label for="q2">2. 18+3b=27, b=</label>
+				<input type="text" id="q2"><br>
+				<label for="q3">3. 6c-20=10, c=</label>
+				<input type="text" id="q3"><br>
+				<label for="q4">4. 42-8d=18, d=</label>
+				<input type="text" id="q4"><br>
+				<label for="q5">5. 16e+4=52, e=</label>
+				<input type="text" id="q5"><br>
+				<input type = "button"
+						value = "Done!"
+						onclick = "problemCheck()" />
+			</form>
+			<p id="grade"> Grade </p>
+		</div>
     </div>
     
 </body>
@@ -121,7 +121,7 @@
         <button class="button button1"onclick="window.location.href='https://jmhobbs29.github.io/WebProgramming6930/hmwk1';">HMWK 1</button>
         <button class="button button2"onclick="window.location.href='https://jmhobbs29.github.io/WebProgramming6930/index';">HMWK 2</button>
         <button class="button button3"onclick="window.location.href='https://jmhobbs29.github.io/WebProgramming6930/hmwk3';">HMWK 3</button>
-        <button class="button button4"onclick="window.location.href='https://jmhobbs29.github.io/WebProgramming6930/hmwk4';">HMWK 4</button>
+        <button class="button button4"onclick="window.location.href='https://jmhobbs29.github.io/WebProgramming6930/hmwk4';">HMWK 4</button><br>
         <button class="button button5"onclick="window.location.href='https://jmhobbs29.github.io/WebProgramming6930/hmwk5';">HMWK 5</button>
         <button class="button button6">HMWK 6</button>
         <button class="button button7"onclick="window.location.href='https://jmhobbs29.github.io/WebProgramming6930/hmwk7';">HMWK 7</button>

@@ -1,32 +1,47 @@
 form{
-    text-align: center;
+    text-align:left;
     height: 25%;
-}
-.image {
-    align-items: center;
-    width: 50%;
-    height:auto;
-}
-#topbox {
-    align-items: center;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: medium;
-    height: 30%;
+}
+
+.topbox {
+	margin: 5px;
+    padding: 5px;
+	border: 2px solid black;
     width: auto;
 }
 
-#problembox {
-    width: 100%;
+.mathbox {
+	margin: 5px;
+	padding: 5px;
+	border: 2px solid black;
+	align-items: center;
+}
+
+.problembox {
+	margin: 5px;
+	padding: 5px;
     height: 60%;
-    text-align:center;
-    align-items:center;
+    text-align: left;
     border: 2px solid black;
+}
+
+.problembox button {
+	
+}
+
+.text {
+	background-color: aqua;
+	text-align: center;
+	margin: 5px;
+	padding: 5px;
+	border: 2px solid black;
 }
 
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: small;
+    font-size: medium;
 }
 
 footer{
@@ -40,54 +55,54 @@ footer{
 
 /* Buttons for all homework assignments */
 
-.button0 {background-color: aquamarine;}
+.button0 {background-color: aqua;}
 .button0:hover {
     background-color: white;
-    border: 2px solid aquamarine;
+    border: 2px solid aqua;
 }
   
-.button1 {background-color: aquamarine;}
+.button1 {background-color: aqua;}
 .button1:hover {
     background-color: white;
-    border: 2px solid aquamarine;
+    border: 2px solid aqua;
 }
-.button2 {background-color: aquamarine;}
+.button2 {background-color: aqua;}
 .button2:hover {
     background-color: white;
-    border: 2px solid aquamarine;
+    border: 2px solid aqua;
 }
-.button3 {background-color: aquamarine;}
+.button3 {background-color: aqua;}
 .button3:hover {
     background-color: white;
-    border: 2px solid aquamarine;
+    border: 2px solid aqua;
 }
-.button4 {background-color: aquamarine;}
+.button4 {background-color: aqua;}
 .button4:hover {
     background-color: white;
-    border: 2px solid aquamarine;
+    border: 2px solid aqua;
 }
-.button5 {background-color: aquamarine;}
+.button5 {background-color: aqua;}
 .button5:hover {
     background-color: white;
-    border: 2px solid aquamarine;
+    border: 2px solid aqua;
 }
-.button6 {background-color: aquamarine;}
+.button6 {background-color: aqua;}
 /* .button6:hover {
     background-color: white;
-    border: 2px solid aquamarine; 
+    border: 2px solid aqua; 
 }*/
-.button7 {background-color: aquamarine;}
+.button7 {background-color: aqua;}
 /* .button7:hover {
     background-color: white;
-    border: 2px solid aquamarine;
+    border: 2px solid aqua;
 } */
-.button8 {background-color: aquamarine;}
+.button8 {background-color: aqua;}
 .button8:hover {
     background-color: white;
-    border: 2px solid aquamarine;
+    border: 2px solid aqua;
 }
-.button9 {background-color: aquamarine;}
+.button9 {background-color: aqua;}
 .button9:hover {
     background-color: white;
-    border: 2px solid aquamarine;
+    border: 2px solid aqua;
 }
