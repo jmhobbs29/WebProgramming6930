@@ -1,119 +1,125 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Education</title>
-    <link rel="stylesheet" href="style8.css">
-    <script type="text/javascript">
-          
-        // constructor Student with properties name, grade and age
-        function Student(stud, algebra){
-			this.name = stud.name.value;
-			this.schgrade = stud.schgrade.value;
-			this.age = stud.age.value;
+	<title>Algebra Practice</title>
+	<link rel="stylesheet" href="style8.css">
+	<script>
+		function Student(info, algebra) {
+			this.name = info.name.value;
+			this.grade = info.grade.value;
+			this.age = info.age.value;
 			this.q1 = algebra.q1.value;
 			this.q2 = algebra.q2.value;
 			this.q3 = algebra.q3.value;
 			this.q4 = algebra.q4.value;
 			this.q5 = algebra.q5.value;
-			
-			this.graded = function () {
-				return "Hello";
+			this.gratitude = function () {
+				return "Thanks "+this.name+" (grade "+this.grade+", age "+this.age+") for practicing with us today!";
 			}
+			this.math = function (num) {
+				if (num == 1){
+					if (this.q1 == 5){
+						return "Correct!"
+					} else {
+						return "Try again!"
+					}
+				} else if (num == 2) {
+					if (this.q2 == 3){
+						return "Correct!"
+					} else {
+						return "Try again!"
+					}
+				} else if (num == 3) {
+					if (this.q3 == 5){
+						return "Correct!"
+					} else {
+						return "Try again!"
+					}
+				} else if (num == 4) {
+					if (this.q4 == 3){
+						return "Correct!"
+					} else {
+						return "Try again!"
+					}
+				} else if (num == 5) {
+					if (this.q5 == 3){
+						return "Correct!"
+					} else {
+						return "Try again!"
+					}
+				}
+			}
+		}
+		
+		
+		function process_form() {
+			var info = document.getElementById("info");
+			var algebra = document.getElementById("algebra");
+			var out = document.getElementById("output");
+			var student = new Student(info, algebra);
+			var small1 = document.getElementById("small1");
+			var small2 = document.getElementById("small2");
+			var small3 = document.getElementById("small3");
+			var small4 = document.getElementById("small4");
+			var small5 = document.getElementById("small5");
 			
-//			if (algebra.q1.value == "5"){
-//				document.getElementById
-//				("grade").innerHTML = "Correct";
-//			} else {
-//				grade.innerHTML = "Try Again"
-//			}
+			out.innerHTML = student.gratitude();
+			small1.innerHTML = student.math(1);
+			small2.innerHTML = student.math(2);
+			small3.innerHTML = student.math(3);
+			small4.innerHTML = student.math(4);
+			small5.innerHTML = student.math(5);
+		
 		}
 	</script>
 
-     <script type="text/javascript">
-        // function to check problems in problembox
-        function problemCheck(){
-//            var stud = document.getElementById("studentInfo");
-//            var algebra = document.getElementById("algebra");
-//			var student = new Student(stud, algebra);
-//			var grad = document.getElementById("grade");
-//			
-//			grad.innerHTML = student.graded();
-//								
-			document.getElementById("grade").innerHTML = "Hello, my name is Jamie.";
-
-			
-            
-        }
-
-//        function writeText(txt, destination){
-//            document.getElementById(destination).innerHTML=txt;
-//        }
-    </script>
 </head>
+
 <body>
-    <!-- <div class="image">
-        <img src="Images/math.jpg">
-    </div> -->
-
-    <!-- topbox has dropdowns to select subject and number of problems to complete -->
-	
-	 <script type="text/javascript">
-	// function to check problems in problembox
-		function problemCheck(){
-//            var stud = document.getElementById("studentInfo");
-//            var algebra = document.getElementById("algebra");
-//			var student = new Student(stud, algebra);
-//			var grad = document.getElementById("grade");
-//			
-//			grad.innerHTML = student.graded();
-//								
-			document.getElementById("grade").innerHTML = "Hello, my name is Jamie.";
-
-
-
-		}
-
-//        function writeText(txt, destination){
-//            document.getElementById(destination).innerHTML=txt;
-//        }
-    </script>
-    <div class="topbox">
-        <form action='' id="studentInfo">
+	<div class="topbox">
+		<form id="info">
 			<label for="name">Name: </label>
 			<input type="text" id="name"><br>
 			<label for"schgrade">Grade: </label>
 			<input type="text" id="grade"><br>
 			<label for="age">Age: </label>
 			<input type="text" id="age">
-                
-        </form>
-    </div>
+		</form>
+	</div>
+	
 	<div class="text">
 		<h2>Let's Do Some Alegbra!</h2>
 	</div>
+	
+	<div class="problembox">
 
-    <div class="problembox">
-        <div class="section2">
-			<form id="algebra" action=''>
-				<label for="q1">1. 2a+7=17, a=</label>
-				<input type="text" id="q1"><br>
-				<label for="q2">2. 18+3b=27, b=</label>
-				<input type="text" id="q2"><br>
-				<label for="q3">3. 6c-20=10, c=</label>
-				<input type="text" id="q3"><br>
-				<label for="q4">4. 42-8d=18, d=</label>
-				<input type="text" id="q4"><br>
-				<label for="q5">5. 16e+4=52, e=</label>
-				<input type="text" id="q5"><br>
-				<input type = "button"
-						value = "Done!"
-						onclick = "problemCheck()" />
-			</form>
-			<p id="grade"> Grade </p>
-		</div>
-    </div>
-    
+		<form id="algebra">
+			<label for="q1">1. 2a+7=17, a=</label>
+			<input type="text" id="q1">
+			<small id="small1"></small><br>
+			<label for="q2">2. 18+3b=27, b=</label>
+			<input type="text" id="q2">
+			<small id="small2"></small><br>
+			<label for="q3">3. 6c-20=10, c=</label>
+			<input type="text" id="q3">
+			<small id="small3"></small><br>
+			<label for="q4">4. 42-8d=18, d=</label>
+			<input type="text" id="q4">
+			<small id="small4"></small><br>
+			<label for="q5">5. 16e+4=52, e=</label>
+			<input type="text" id="q5">
+			<small id="small5"></small><br>
+			<button type="button" onclick="process_form()">Submit</button>
+			<div id="output">
+
+            </div>
+			
+			
+		</form>
+	</div>
+	
+	
 </body>
 <footer>
     <div class="buttons">
