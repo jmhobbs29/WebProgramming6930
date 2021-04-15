@@ -88,8 +88,11 @@
 		//new array of student names
 		var students = ["John", "Sally", "Thomas"];
 		
+		
 		function addname() {
+			//add new student to array 
 			students.push(document.getElementById("info").name.value);
+			//write out new array of students including the current student.
 			document.getElementById("names").innerHTML = students;
 		}
 		
@@ -144,9 +147,12 @@
 		</form>
 	</div>
 	<div class="listbox">
+		<!-- Using an array, display list of students. -->
 		<p>Click below to add your name to the list of awesome algebra experts!</p><br>
+		<!-- Button to add current student's name to array -->
 		<button type="button"
 				onclick="addname()">Add Me</button><br>
+		<!--Area to write out list of students along with the newly added student. -->
 		<p id="names"></p>
 		
 	</div>
