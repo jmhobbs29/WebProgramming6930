@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="style8.css">
 	<script>
 		function Student(info, algebra) {
+			//identifies each property of the constructor student.
 			this.name = info.name.value;
 			this.grade = info.grade.value;
 			this.age = info.age.value;
@@ -14,10 +15,13 @@
 			this.q3 = algebra.q3.value;
 			this.q4 = algebra.q4.value;
 			this.q5 = algebra.q5.value;
+			
+			//this function returns a gratitude statement containing student personal information.
 			this.gratitude = function () {
 				return "Thanks "+this.name+" (grade "+this.grade+", age "+this.age+") for practicing with us today!";
 			}
 			this.math = function (num) {
+				//this function identifies which problem is being answered then assesses if the student answered the problem correctly or not.
 				if (num == 1){
 					if (this.q1 == 5){
 						return "Correct!"
@@ -54,17 +58,26 @@
 		
 		
 		function process_form() {
+			//gets student personal info from form
 			var info = document.getElementById("info");
+			//gets answers to practice problems
 			var algebra = document.getElementById("algebra");
+			//gets output area located at the box of the problem box
 			var out = document.getElementById("output");
+			
+			//creates new object Student with given information and practice problem answers
 			var student = new Student(info, algebra);
+			
+			//gets output area located after each practice problem answer box
 			var small1 = document.getElementById("small1");
 			var small2 = document.getElementById("small2");
 			var small3 = document.getElementById("small3");
 			var small4 = document.getElementById("small4");
 			var small5 = document.getElementById("small5");
 			
+			//writes gratitude statement
 			out.innerHTML = student.gratitude();
+			//writes "Correct" or "Try again" after for each problem upon hitting submit
 			small1.innerHTML = student.math(1);
 			small2.innerHTML = student.math(2);
 			small3.innerHTML = student.math(3);
@@ -77,6 +90,7 @@
 </head>
 
 <body>
+<!--Div containing student information-->
 	<div class="topbox">
 		<form id="info">
 			<label for="name">Name: </label>
@@ -88,12 +102,14 @@
 		</form>
 	</div>
 	
+<!--Box containing slogan-->
 	<div class="text">
 		<h2>Let's Do Some Alegbra!</h2>
 	</div>
 	
+<!--Box containing practice problems-->
 	<div class="problembox">
-
+	<!--Practice Problems-->
 		<form id="algebra">
 			<label for="q1">1. 2a+7=17, a=</label>
 			<input type="text" id="q1">
@@ -110,18 +126,19 @@
 			<label for="q5">5. 16e+4=52, e=</label>
 			<input type="text" id="q5">
 			<small id="small5"></small><br>
+			<!--Submit button to check practice probelms-->
 			<button type="button" onclick="process_form()">Submit</button>
+			<!--Area to write out gratitude statement containing properties from the constructor student-->
 			<div id="output">
 
-            </div>
-			
-			
+			</div>
 		</form>
 	</div>
 	
 	
 </body>
 <footer>
+	<!--Buttons to access other homework assignments-->
     <div class="buttons">
         <button class="button button0"onclick="window.location.href='https://jmhobbs29.github.io/WebProgramming6930/hmwk0';">HMWK 0</button>
         <button class="button button1"onclick="window.location.href='https://jmhobbs29.github.io/WebProgramming6930/hmwk1';">HMWK 1</button>
