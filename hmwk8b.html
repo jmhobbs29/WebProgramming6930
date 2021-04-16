@@ -1,0 +1,204 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Algebra Practice 3</title>
+	<link rel="stylesheet" href="style9b.css">
+	<script>
+		function Student(info, algebra) {
+			//identifies each property of the constructor student.
+			this.name = info.name.value;
+			this.grade = info.grade.value;
+			this.age = info.age.value;
+			this.q1 = algebra.q1.value;
+			this.q2 = algebra.q2.value;
+			this.q3 = algebra.q3.value;
+			this.q4 = algebra.q4.value;
+			this.q5 = algebra.q5.value;
+			
+			//this function returns a gratitude statement containing student personal information.
+			this.gratitude = function () {
+				return "Thanks "+this.name+" (grade "+this.grade+", age "+this.age+") for practicing with us today!";
+			}
+			
+			var count = 0;
+
+			this.math = function (num) {
+				//this function identifies which problem is being answered then assesses if the student answered the problem correctly or not.
+				if (num == 1){
+					if (this.q1 == 5){
+						return "Correct!"
+					} else {
+						return "Try again!"
+					}
+				} else if (num == 2) {
+					if (this.q2 == 3){
+						return "Correct!"
+					} else {
+						return "Try again!"
+					}
+				} else if (num == 3) {
+					if (this.q3 == 5){
+						return "Correct!"
+					} else {
+						return "Try again!"
+					}
+				} else if (num == 4) {
+					if (this.q4 == 3){
+						return "Correct!"
+					} else {
+						return "Try again!"
+					}
+				} else if (num == 5) {
+					if (this.q5 == 3){
+						return "Correct!"
+					} else {
+						return "Try again!"
+					}
+				}
+			}
+		}
+		
+		
+		function process_form() {
+			//gets student personal info from form
+			var info = document.getElementById("info");
+			//gets answers to practice problems
+			var algebra = document.getElementById("algebra");
+			//gets output area located in the box of the problem box
+			var out = document.getElementById("output");
+			//gets output area located in problem box to show results.
+			var count = document.getElementById("count");
+			
+			//creates new object Student with given information and practice problem answers
+			var student = new Student(info, algebra);
+			
+			//gets output area located after each practice problem answer box
+			var small1 = document.getElementById("small1");
+			var small2 = document.getElementById("small2");
+			var small3 = document.getElementById("small3");
+			var small4 = document.getElementById("small4");
+			var small5 = document.getElementById("small5");
+			
+			//writes gratitude statement
+			out.innerHTML = student.gratitude();
+			//writes "Correct" or "Try again" after for each problem upon hitting submit
+			small1.innerHTML = student.math(1);
+			small2.innerHTML = student.math(2);
+			small3.innerHTML = student.math(3);
+			small4.innerHTML = student.math(4);
+			small5.innerHTML = student.math(5);
+			
+			var i = 1;
+			var j = 1;
+			var num;
+			var results = [];
+			
+			while (i<6){
+				results.push(student.math(i));
+				i++;
+			}
+			while (j<6){
+				if (results[j]== "Correct!"){
+					num++;
+				}
+			}
+			if (num <= 3){
+				count.innerHTML = "You got 3 or less wrong, keep practicing!"
+			} else {
+				count.innerHTML = "You got at least 80%, Good Job!"
+			}
+		
+		}
+		//new array of student names
+		var students = ["John", "Sally", "Thomas"];
+		
+		
+		function addname() {
+			//add new student to array 
+			students.push(document.getElementById("info").name.value);
+			//write out new array of students including the current student.
+			document.getElementById("names").innerHTML = students;
+		}
+		
+
+	</script>
+
+</head>
+
+<body>
+<!--Div containing student information-->
+	<div class="topbox">
+		<form id="info">
+			<label for="name">Name: </label>
+			<input type="text" id="name"><br>
+			<label for"schgrade">Grade: </label>
+			<input type="text" id="grade"><br>
+			<label for="age">Age: </label>
+			<input type="text" id="age">
+		</form>
+	</div>
+	
+<!--Box containing slogan-->
+	<div class="text">
+		<h2>Let's Do Some Alegbra!</h2>
+	</div>
+	
+<!--Box containing practice problems-->
+	<div class="problembox">
+	<!--Practice Problems-->
+		<form id="algebra">
+			<label for="q1">1. 2a+7=17, a=</label>
+			<input type="text" id="q1">
+			<small id="small1"></small><br>
+			<label for="q2">2. 18+3b=27, b=</label>
+			<input type="text" id="q2">
+			<small id="small2"></small><br>
+			<label for="q3">3. 6c-20=10, c=</label>
+			<input type="text" id="q3">
+			<small id="small3"></small><br>
+			<label for="q4">4. 42-8d=18, d=</label>
+			<input type="text" id="q4">
+			<small id="small4"></small><br>
+			<label for="q5">5. 16e+4=52, e=</label>
+			<input type="text" id="q5">
+			<small id="small5"></small><br>
+			<!--Submit button to check practice probelms-->
+			<button type="button" onclick="process_form()">Submit</button>
+			<!--Area to write out gratitude statement containing properties from the constructor student-->
+			<div id="output">
+
+			</div>
+			<p id="count">
+			hello
+			</p>
+		</form>
+	</div>
+	<div class="listbox">
+		<!-- Using an array, display list of students. -->
+		<p>Click below to add your name to the list of awesome algebra experts!</p><br>
+		<!-- Button to add current student's name to array -->
+		<button type="button"
+				onclick="addname()">Add Me</button><br>
+		<!--Area to write out list of students along with the newly added student. -->
+		<p id="names"></p>
+		
+	</div>
+	
+</body>
+<footer>
+	<!--Buttons to access other homework assignments-->
+    <div class="buttons">
+        <button class="button button0"onclick="window.location.href='https://jmhobbs29.github.io/WebProgramming6930/hmwk0';">HMWK 0</button>
+        <button class="button button1"onclick="window.location.href='https://jmhobbs29.github.io/WebProgramming6930/hmwk1';">HMWK 1</button>
+        <button class="button button2"onclick="window.location.href='https://jmhobbs29.github.io/WebProgramming6930/index';">HMWK 2</button>
+        <button class="button button3"onclick="window.location.href='https://jmhobbs29.github.io/WebProgramming6930/hmwk3';">HMWK 3</button>
+        <button class="button button4"onclick="window.location.href='https://jmhobbs29.github.io/WebProgramming6930/hmwk4';">HMWK 4</button><br>
+        <button class="button button5"onclick="window.location.href='https://jmhobbs29.github.io/WebProgramming6930/hmwk5';">HMWK 5</button>
+        <button class="button button6">HMWK 6</button>
+        <button class="button button7"onclick="window.location.href='https://jmhobbs29.github.io/WebProgramming6930/hmwk7';">HMWK 7</button>
+        <button class="button button8"onclick="window.location.href='https://jmhobbs29.github.io/WebProgramming6930/hmwk8">HMWK 8</button>
+        <button class="button button9">HMWK 9</button>
+    </div>
+</footer>
+</html>
