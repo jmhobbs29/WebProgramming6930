@@ -46,6 +46,9 @@ footer{
 
 
 /* Buttons for all homework assignments */
+.button{
+	width:10%;
+}
 
 .button0 {background-color: palegreen;}
 .button0:hover {
@@ -89,15 +92,30 @@ footer{
     border: 2px solid palegreen;
 } 
 .button8 {background-color: palegreen;}
-/*
 .button8:hover {
     background-color: white;
     border: 2px solid palegreen;
 }
+
+.button8b {background-color: palegreen;}
+/*
+.button8b:hover {
+    background-color: white;
+    border: 2px solid palegreen;
+}
 */
+
 .button9 {background-color: palegreen;}
 /*
 .button9:hover {
+    background-color: white;
+    border: 2px solid palegreen;
+}
+*/
+
+.button10 {background-color: palegreen;}
+/*
+.button10:hover {
     background-color: white;
     border: 2px solid palegreen;
 }
