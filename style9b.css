@@ -27,7 +27,7 @@ form{
 }
 
 .text {
-	background-color: palegreen;
+	background-color: lightcoral;
 	text-align: center;
 	margin: 5px;
 	padding: 5px;
@@ -48,75 +48,76 @@ footer{
 /* Buttons for all homework assignments */
 .button{
 	width:10%;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.button0 {background-color: palegreen;}
+.button0 {background-color: lightcoral;}
 .button0:hover {
     background-color: white;
-    border: 2px solid palegreen;
+    border: 2px solid lightcoral;
 }
   
-.button1 {background-color: palegreen;}
+.button1 {background-color: lightcoral;}
 .button1:hover {
     background-color: white;
-    border: 2px solid palegreen;
+    border: 2px solid lightcoral;
 }
-.button2 {background-color: palegreen;}
+.button2 {background-color: lightcoral;}
 .button2:hover {
     background-color: white;
-    border: 2px solid palegreen;
+    border: 2px solid lightcoral;
 }
-.button3 {background-color: palegreen;}
+.button3 {background-color: lightcoral;}
 .button3:hover {
     background-color: white;
-    border: 2px solid palegreen;
+    border: 2px solid lightcoral;
 }
-.button4 {background-color: palegreen;}
+.button4 {background-color: lightcoral;}
 .button4:hover {
     background-color: white;
-    border: 2px solid palegreen;
+    border: 2px solid lightcoral;
 }
-.button5 {background-color: palegreen;}
+.button5 {background-color: lightcoral;}
 .button5:hover {
     background-color: white;
-    border: 2px solid palegreen;
+    border: 2px solid lightcoral;
 }
-.button6 {background-color: palegreen;}
+.button6 {background-color: lightcoral;}
  .button6:hover {
     background-color: white;
-    border: 2px solid palegreen; 
+    border: 2px solid lightcoral; 
 }
-.button7 {background-color: palegreen;}
+.button7 {background-color: lightcoral;}
  .button7:hover {
     background-color: white;
-    border: 2px solid palegreen;
+    border: 2px solid lightcoral;
 } 
-.button8 {background-color: palegreen;}
+.button8 {background-color: lightcoral;}
 .button8:hover {
     background-color: white;
-    border: 2px solid palegreen;
+    border: 2px solid lightcoral;
 }
 
-.button8b {background-color: palegreen;}
+.button8b {background-color: lightcoral;}
 /*
 .button8b:hover {
     background-color: white;
-    border: 2px solid palegreen;
+    border: 2px solid lightcoral;
 }
 */
 
-.button9 {background-color: palegreen;}
+.button9 {background-color: lightcoral;}
 /*
 .button9:hover {
     background-color: white;
-    border: 2px solid palegreen;
+    border: 2px solid lightcoral;
 }
 */
 
-.button10 {background-color: palegreen;}
+.button10 {background-color: lightcoral;}
 /*
 .button10:hover {
     background-color: white;
-    border: 2px solid palegreen;
+    border: 2px solid lightcoral;
 }
 */
