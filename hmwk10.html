@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Jungle Pictures</title>
+        <link rel="stylesheet" href="style11.css">
+    </head>
+    <body bgcolor="lightgreen">
+
+        <script type="application/javascript">
+            
+			
+			
+
+			
+			//function to change animal picture based on user selection
+            function showAnimal(){
+                var current = document.getElementById("jungle");
+				var animals = ["https://jmhobbs29.github.io/WebProgramming6930/Images/elephant.png",
+							  "https://jmhobbs29.github.io/WebProgramming6930/Images/lion.png",
+							  "https://jmhobbs29.github.io/WebProgramming6930/Images/monkey.png",
+							  "https://jmhobbs29.github.io/WebProgramming6930/Images/tiger.png"]
+				
+				var sounds = ["https://jmhobbs29.github.io/WebProgramming6930/Sounds/elephant.mp3",
+							  "https://jmhobbs29.github.io/WebProgramming6930/Sounds/lion.mp3",
+							  "https://jmhobbs29.github.io/WebProgramming6930/Sounds/monkey.mp3",
+							  "https://jmhobbs29.github.io/WebProgramming6930/Sounds/tiger.mp3"]
+				var player = new Audio();
+			
+				function play(s) {
+					player.src = s;
+					player.load();
+					player.play();
+				}
+   
+				var newImg = document.getElementById("animal");
+				if (newImg.value == "random"){
+				    //var random = Math.random(animals.length+1);
+					var random = Math.floor(Math.random() * (animals.length));
+					current.src = animals[random];
+					play(sounds[random]);
+				} else if (newImg.value== "tiger") {
+                	current.src = animals[3];
+					player.play(sounds[3]);
+				} else if (newImg.value =="lion") {
+					current.src = animals[1];
+					player.play(sounds[1]);
+				} else if (newImg.value =="monkey") {
+					current.src = animals[2];
+					player.play(sounds[2]);
+				}else {
+					current.src = animals[0];
+					player.play(sounds[0]);
+				}
+			}
+			
+			
+
+        //form to determine user's favorite jungle animal with dropdown option 
+        </script>
+        <!-- form layout -->
+        <form action="">
+            <h1>What's your favorite jungle animal?</h1>
+            <p>Select from the following options:</p>
+            <fieldset>
+                <select id="animal">
+                    <option value="elephant">Elephant</option>
+                    <option value="lion">Lion</option>
+                    <option value="monkey">Monkey</option>
+                    <option value="tiger">Tiger</option>
+					<option value="random">Random</option>
+                </select>
+                <input type = "button"
+                    value = "Show Animal"
+                    onclick = "showAnimal()" />
+            </fieldset>
+        </form>
+        <!-- initial image -->
+        <div class="jungle">
+            <img id ="jungle" src="https://jmhobbs29.github.io/WebProgramming6930/Images/george.png";>
+        </div>
+       
+    </body>
+</html>
+    

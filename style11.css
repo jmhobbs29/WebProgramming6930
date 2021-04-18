@@ -1,0 +1,17 @@
+#main body style
+
+body {
+    margin: 0;
+    margin-top: 60px;
+    align-items: center;
+    text-align: center;
+	background-color: lightgreen;
+}
+
+/* initial image parameters */
+.jungle img{
+    display: block;
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+}
