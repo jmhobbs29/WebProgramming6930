@@ -15,25 +15,35 @@
 			
 			//function to change animal picture based on user selection
             function showAnimal(){
+				//get current picture
                 var current = document.getElementById("jungle");
+				
+				//array of animal pictures
 				var animals = ["https://jmhobbs29.github.io/WebProgramming6930/Images/elephant.png",
 							  "https://jmhobbs29.github.io/WebProgramming6930/Images/lion.png",
 							  "https://jmhobbs29.github.io/WebProgramming6930/Images/monkey.png",
 							  "https://jmhobbs29.github.io/WebProgramming6930/Images/tiger.png"]
 				
+				//array of animal sounds
 				var sounds = ["https://jmhobbs29.github.io/WebProgramming6930/Sounds/elephant.mp3",
 							  "https://jmhobbs29.github.io/WebProgramming6930/Sounds/lion.mp3",
 							  "https://jmhobbs29.github.io/WebProgramming6930/Sounds/monkey.mp3",
 							  "https://jmhobbs29.github.io/WebProgramming6930/Sounds/tiger.mp3"]
+				
+				//create new audio to play animal sounds
 				var player = new Audio();
 			
+				//function to play animal sounds
 				function play(s) {
 					player.src = s;
 					player.load();
 					player.play();
 				}
-   
+   				
+				//retrieve output for new image
 				var newImg = document.getElementById("animal");
+				
+				//determine which image to display and sound to play
 				if (newImg.value == "random"){
 				    //var random = Math.random(animals.length+1);
 					var random = Math.floor(Math.random() * (animals.length));
@@ -58,6 +68,7 @@
 
         //form to determine user's favorite jungle animal with dropdown option 
         </script>
+		
         <!-- form layout -->
         <form action="">
             <h1>What's your favorite jungle animal?</h1>
@@ -75,11 +86,28 @@
                     onclick = "showAnimal()" />
             </fieldset>
         </form>
+		
         <!-- initial image -->
         <div class="jungle">
             <img id ="jungle" src="https://jmhobbs29.github.io/WebProgramming6930/Images/george.png";>
         </div>
        
     </body>
+	<footer>
+	<!--Buttons to access other homework assignments-->
+    <div class="buttons">
+        <button class="button button0" onclick="window.location.href='https://jmhobbs29.github.io/WebProgramming6930/hmwk0';">HMWK 0</button>
+        <button class="button button1" onclick="window.location.href='https://jmhobbs29.github.io/WebProgramming6930/hmwk1';">HMWK 1</button>
+        <button class="button button2" onclick="window.location.href='https://jmhobbs29.github.io/WebProgramming6930/index';">HMWK 2</button>
+        <button class="button button3" onclick="window.location.href='https://jmhobbs29.github.io/WebProgramming6930/hmwk3';">HMWK 3</button>
+        <button class="button button4" onclick="window.location.href='https://jmhobbs29.github.io/WebProgramming6930/hmwk4';">HMWK 4</button>
+        <button class="button button5" onclick="window.location.href='https://jmhobbs29.github.io/WebProgramming6930/hmwk5';">HMWK 5</button>
+        <button class="button button6">HMWK 6</button>
+        <button class="button button7" onclick="window.location.href='https://jmhobbs29.github.io/WebProgramming6930/hmwk7';">HMWK 7</button>
+        <button class="button button8" onclick="window.location.href='https://jmhobbs29.github.io/WebProgramming6930/hmwk8';">HMWK 8</button>
+		<button class="button button8b" onclick="window.location.href='https://jmhobbs29.github.io/WebProgramming6930/hmwk8b';">HMWK 9</button>
+		<button class="button button10" >HMWK 10</button>
+    </div>
+</footer>
 </html>
     

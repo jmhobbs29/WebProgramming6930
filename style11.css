@@ -15,3 +15,77 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+
+footer {
+	margin: 15px;
+	align-content: center;
+}
+
+.button{
+	width:8%;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.button0 {background-color: lightgray;}
+.button0:hover {
+    background-color: white;
+    border: 2px solid lightgray;
+}
+  
+.button1 {background-color: lightgray;}
+.button1:hover {
+    background-color: white;
+    border: 2px solid lightgray;
+}
+.button2 {background-color: lightgray;}
+.button2:hover {
+    background-color: white;
+    border: 2px solid lightgray;
+}
+.button3 {background-color: lightgray;}
+.button3:hover {
+    background-color: white;
+    border: 2px solid lightgray;
+}
+.button4 {background-color: lightgray;}
+.button4:hover {
+    background-color: white;
+    border: 2px solid lightgray;
+}
+.button5 {background-color: lightgray;}
+.button5:hover {
+    background-color: white;
+    border: 2px solid lightgray;
+}
+.button6 {background-color: lightgray;}
+ .button6:hover {
+    background-color: white;
+    border: 2px solid lightgray; 
+}
+.button7 {background-color: lightgray;}
+ .button7:hover {
+    background-color: white;
+    border: 2px solid lightgray;
+} 
+.button8 {background-color: lightgray;}
+/*
+.button8:hover {
+    background-color: white;
+    border: 2px solid lightgray;
+}
+*/
+
+.button8b {background-color: lightgray;}
+.button8b:hover {
+    background-color: white;
+    border: 2px solid lightgray;
+}
+
+
+.button10 {background-color: lightgray;}
+/*
+.button10:hover {
+    background-color: white;
+    border: 2px solid lightgray;
+}
+*/
