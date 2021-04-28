@@ -1,0 +1,166 @@
+@charset "utf-8";
+/* CSS Document */
+
+html {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100;
+}
+
+body {
+	margin: 0;
+	background-color: white;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"
+}
+
+/*fixed header across top of screen*/
+header {
+	position:fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: darkgreen;
+	color: white;
+	box-sizing: border-box;
+	clear: both;
+	z-index: 1;
+	height: 75px;
+}
+
+/*header's title properties*/
+header h1 {
+	text-align: center;
+	color: burlywood;
+}
+
+/*top box under header*/
+.learning {
+	margin: 75px 0 0 0;
+	padding: 2%;
+	border: solid thick burlywood;
+	background-color: white;
+	box-sizing: border-box;
+}
+/*Left column with coins and values*/
+.quarter, .dime, .nickel, .penny {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	font-size:1.25em;
+	align-content: center;
+}
+
+/*Coin sizes*/
+.quarter img{
+	width: 35%;
+}
+.dime img{
+	width: 22%;
+}
+.nickel img{
+	width: 28%;
+}
+.penny img{
+	width: 26%;
+}
+
+/*box to make selection on coin types to count*/
+.selections {
+	border: solid thick darkgreen;
+	padding: 2%;
+	box-sizing: border-box;
+	background-color: white;
+}
+
+/*display money windown*/
+.money {
+	display: grid;
+	grid-template-rows: 2fr;
+	grid-template-columns: auto;
+	background-color: burlywood;
+	color: white;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+.money section {
+/*	border: solid thin white;*/
+	text-align: center;
+}
+
+
+/*this targets PHONES */
+@media screen and (max-width: 640px){
+	
+	.learning {
+		display: grid;
+		vertical-align: middle;
+		padding: 4%;
+		box-sizing: border-box;
+		width: 100%;
+	}
+	
+	.learning iFrame {
+		width: 426px;
+		height: 240px;
+	}
+	
+}
+
+/*this targets TABLETS */
+@media screen and (min-width: 640px) and (max-width: 1024px){
+	body {
+		font-size: 1.15em; /*new*/
+	}
+	
+	.learning {
+		display: grid;
+		grid-template-columns: 2fr 1fr; /*new*/
+		vertical-align: middle;
+		padding: 6%; /*updated*/
+		box-sizing: border-box;
+		width: 100%;
+		grid-column-gap: 5%; /*new*/
+	}
+	
+	.learning section {
+		margin-bottom: 3%; /*new*/
+	}
+	
+	.learning iFrame {
+		width: 640px; /*updated*/
+		height: 360px; /*updated*/
+	}
+	
+	.selections {
+		text-align: center;
+	}	
+}
+
+/*this targets DESKTOPS */
+@media screen and (min-width: 1024px) {
+	body {
+		font-size: 1.25em; /*updated*/
+	}
+
+	.learning {
+		display: grid;
+		grid-template-columns: 2fr 1fr; 
+		vertical-align: middle;
+		padding: 4% 4% 0% 4%; /*updated*/
+		box-sizing: border-box;
+		width: 100%;
+		grid-column-gap: 5%; 
+	}
+	
+	.learning section {
+		margin-bottom: 3%; 
+	}
+	
+	.learning iFrame {
+		width: 640px; 
+		height: 360px; 
+	}
+	
+	.selections {
+		text-align: center;
+	}
+}
