@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>$Count Your Money$</title>
+	<link href="../final/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	
+	<script type="application/javascript">
+		
+		function checkAns(){
+			var current1 = document.getElementById("coin1");
+			var current2 = document.getElementById("coin2");
+			var current3 = document.getElementById("coin3");
+			var current4 = document.getElementById("coin4");
+			var current5 = document.getElementById("coin5");
+			
+			var all = [];
+			
+			all.push(current1.src);
+			all.push(current2.src);
+			all.push(current3.src);
+			all.push(current4.src);
+			all.push(current5.src);
+			
+			var i = 0;
+			var amt = 0;
+			
+			while (i <5){		
+				if(all[i] == "file:///C:/Users/count/OneDrive/Documents/Escuela/USF/WebProgramming/WebProgramming6930/6930FINAL/images/quarter.png"){
+					amt += 0.25;
+				
+				} else if (all[i] == "file:///C:/Users/count/OneDrive/Documents/Escuela/USF/WebProgramming/WebProgramming6930/6930FINAL/images/dime.png"){
+					amt += 0.1;
+				
+				} else if (all[i] == 		"file:///C:/Users/count/OneDrive/Documents/Escuela/USF/WebProgramming/WebProgramming6930/6930FINAL/images/nickel.png"){
+					amt += 0.05;
+			
+				} else {
+					amt += 0.01;
+				
+				}
+				i++;
+				console.log(amt);
+			}
+			
+			var answer = document.getElementById("answer").value;
+			console.log(answer);
+			var results = document.getElementById("Results");
+			
+			if (amt == answer){
+				results.innerHTML = "Good Job!"
+			} else {
+				results.innerHTML = "Try again!"
+			} 
+		}
+	
+		function showmoney(){
+			var current1 = document.getElementById("coin1");
+			var current2 = document.getElementById("coin2");
+			var current3 = document.getElementById("coin3");
+			var current4 = document.getElementById("coin4");
+			var current5 = document.getElementById("coin5");
+			
+			console.log(current1.src);
+			
+			var coinType = document.getElementById("coinType");
+			
+			var change = ["images/quarter.png", "images/dime.png", "images/nickel.png", "images/penny.png"]
+			
+			
+			if (coinType.value == "random"){
+				
+				var random1 = Math.floor(Math.random() * (4));
+				var random2 = Math.floor(Math.random() * (4));
+				var random3 = Math.floor(Math.random() * (4));
+				var random4 = Math.floor(Math.random() * (4));
+				var random5 = Math.floor(Math.random() * (4));
+				
+				current1.src = change[random1];
+				current2.src = change[random2];
+				current3.src = change[random3];
+				current4.src = change[random4];
+				current5.src = change[random5];
+			
+			} 
+			
+		}
+	</script>
+	
+	
+	
+	<header>
+		<h1>$ Let's Count Your Money $</h1>
+	</header>
+	<!--	area to describe the difference between currency pieces. -->
+	<div class="learning">
+		<!-- Information about different coins and dollar bills. -->
+		<section>
+			<div class="quarter"><img src="images/quarter.png" alt="Quarter"><p>Quarter<br>4 quarters = $1.00</p></div>
+			<div class="dime"><img src="images/dime.png" alt="Dime"><p>Dime<br>10 dimes = $1.00</p></div>
+			<div class="nickel"><img src="images/nickel.png" alt="Nickel"><p>Nickel<br>20 nickels = $1.00</p></div>
+			<div class="penny"><img src="images/penny.png" alt="Penny"><p>Penny<br>100 pennies = $1.00</p></div>		
+		</section>
+		
+		<!-- Video or slide show about how to cont money. -->
+		<aside>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/MbtmucV-U2c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</aside>
+	</div>
+	
+	<div class="selections">
+		<!-- select what and how many coins and bills to use. -->
+		<!-- options include only dollar bills, only coins, combo of coins and dollars, only certain coins --> 
+		<form action="">
+			<fieldset>
+                <select id="coinType">
+                    <option value="quarters">Quarters</option>
+                    <option value="dimes">Dimes</option>
+                    <option value="nickels">Nickels</option>
+                    <option value="pennies">Pennies</option>
+					<option value="random">Random</option>
+                </select>
+                <input type = "button"
+                    value = "Show Money"
+                    onclick = "showmoney()" />
+            </fieldset>
+		</form>
+	</div>
+	
+	<!-- based on form inputs, display # coins and # bills or choose random generator -->
+	<div class="money">
+		<!-- image to count money from -->
+		<section>
+			<p>Count Your Money!</p>
+			<img id="coin1" src="images/qt.png">
+			<img id="coin2" src="images/qt.png">
+			<img id="coin3" src="images/qt.png">
+			<img id="coin4" src="images/qt.png">
+			<img id="coin5" src="images/qt.png">
+		</section>
+		<form id="ans">
+			<input type="text" id="answer">
+			<button type="button" onclick="checkAns()">Check</button>
+			<p id="Results"></p>
+		</form>
+	</div>
+</body>
+
+</html>

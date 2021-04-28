@@ -86,9 +86,6 @@ header h1 {
 	text-align: center;
 }
 
-.money img {
-	width: 15%;
-} 
 
 /*this targets PHONES */
 @media screen and (max-width: 640px){
